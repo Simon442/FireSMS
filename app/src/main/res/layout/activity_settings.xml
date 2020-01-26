@@ -57,10 +57,12 @@
         android:id="@+id/seekBarVolume"
         android:layout_width="344dp"
         android:layout_height="34dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVibration" />
 
     <TextView
         android:id="@+id/textView"
@@ -94,12 +96,10 @@
         android:id="@+id/saveSettingsBtn"
         android:layout_width="189dp"
         android:layout_height="73dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/shrani"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

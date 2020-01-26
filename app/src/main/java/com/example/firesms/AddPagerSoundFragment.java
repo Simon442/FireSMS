@@ -31,9 +31,10 @@ public class AddPagerSoundFragment extends DialogFragment {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        final String[] list=getActivity().getResources().getStringArray(R.array.select_sound);
+        final String[] list= getActivity().getResources().getStringArray(R.array.select_sound);
 
         AlertDialog.Builder builder1 = builder.setTitle("Izberi zvok pozivnika")
                 .setSingleChoiceItems(list, position, new DialogInterface.OnClickListener() {
