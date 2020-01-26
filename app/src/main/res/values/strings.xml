@@ -13,6 +13,7 @@
     <string name="vibriraj">Vibriraj</string>
     <string name="glasnost">Glasnost</string>
     <string name="zvok_pozivnika">Zvok pozivnika</string>
+    <string name="shrani">SHRANI</string>
     <string-array name="select_sound">
         <item>Pozivnik_1</item>
         <item>Pozivnik_2</item>
