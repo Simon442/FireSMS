@@ -28,6 +28,5 @@ public class MainActivity extends AppCompatActivity {
     public void DodajPozivnike() {
         Intent intent = new Intent(this, DodajPozivnike.class);
         startActivity(intent);
-        startActivity(intent);
     }
 }
