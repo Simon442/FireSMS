@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/gumbDodajPozivnike"
+        android:id="@+id/addPagerBtn"
         android:layout_width="92dp"
         android:layout_height="83dp"
         android:layout_marginStart="284dp"
