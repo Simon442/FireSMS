@@ -1,0 +1,5 @@
+SLO
+
+FireSMS ni nadomestek pozivnikov ali drugih sistemov namenjenih alarmiranju sil enot za zaščito in reševanje. 
+Razivjalec aplikacije FireSMS ni odgovoren in ne more biti odgovoren za nastalo škodo zoper življenje, okolje ali material, ki bi nastala zaradi uporabe FireSMS.
+Prav tako razvijalec FireSMS tudi ne bo odgovoren, za kakršno koli škodo, ki bi lahko nastala na GSM napravi zaradi uporabe FireSMS.
