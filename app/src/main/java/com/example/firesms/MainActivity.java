@@ -16,17 +16,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        gumbDodajPozivnik = (Button) (R.id.gumbDodajPozivnik);
+        gumbDodajPozivnik = findViewById(R.id.gumbDodajPozivnik);
         gumbDodajPozivnik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDodajPozivnike();
-
+                DodajPozivnike();
             }
         });
     }
-    public void openDodajPozivnike(){
+
+    public void DodajPozivnike() {
         Intent intent = new Intent(this, DodajPozivnike.class);
+        startActivity(intent);
         startActivity(intent);
     }
 }
