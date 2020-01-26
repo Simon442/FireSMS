@@ -2,6 +2,7 @@
     <string name="app_name">FireSMS</string>
     <string name="pretekli_pozivi">PRETEKLI POZIVI</string>
     <string name="vklopi">VKLOPI</string>
+    <string name="izklopi">IZKLOPI</string>
     <string name="nastavitve">NASTAVITVE</string>
     <string name="dodaj_pozivnik">DODAJ POZIVNIK</string>
     <string name="dodaj_poziv">DODAJ POZIV</string>
