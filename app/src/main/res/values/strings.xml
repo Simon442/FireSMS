@@ -8,4 +8,16 @@
     <string name="dodaj_poziv">DODAJ POZIV</string>
     <string name="aktivni_pozivniki">AKTIVNI POZIVNIKI</string>
     <string name="todo">TODO</string>
+    <string name="zvoni_tudi_v_tihem_na_inu">Zvoni tudi v tihem načinu</string>
+    <string name="zvok">Zvok</string>
+    <string name="vibriraj">Vibriraj</string>
+    <string name="glasnost">Glasnost</string>
+    <string name="zvok_pozivnika">Zvok pozivnika</string>
+    <string-array name="select_sound">
+        <item>Pozivnik_1</item>
+        <item>Pozivnik_2</item>
+        <item>Pozivnik_3</item>
+        <item>Pozivnik_4</item>
+    </string-array>
+
 </resources>
