@@ -32,17 +32,6 @@
         app:layout_constraintTop_toBottomOf="@+id/settingsText" />
 
     <CheckBox
-        android:id="@+id/checkBoxSound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:text="@string/zvok"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxSilentMode" />
-
-    <CheckBox
         android:id="@+id/checkBoxVibration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,25 +40,25 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxSound" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSilentMode" />
 
     <SeekBar
         android:id="@+id/seekBarVolume"
         android:layout_width="344dp"
         android:layout_height="34dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="293dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveSettingsBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxVibration" />
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="300dp"
         android:layout_marginBottom="4dp"
         android:text="@string/glasnost"
@@ -78,19 +67,7 @@
         app:layout_constraintBottom_toTopOf="@+id/seekBarVolume"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxVibration"
-        app:layout_constraintVertical_bias="0.63" />
-
-    <TextView
-        android:id="@+id/textViewPagerSound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="7dp"
-        android:text="@string/zvok_pozivnika"
-        app:layout_constraintStart_toEndOf="@+id/checkBoxSound"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxSilentMode" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/saveSettingsBtn"
@@ -102,4 +79,14 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerAddSound"
+        android:layout_width="154dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVibration" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

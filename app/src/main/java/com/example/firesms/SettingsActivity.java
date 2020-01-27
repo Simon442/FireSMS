@@ -4,44 +4,52 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class SettingsActivity extends AppCompatActivity implements AddPagerSoundFragment.SingleChoiceListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
-    private TextView textViewPagerSound;
+    private Spinner spinnerAddSound;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        CheckBox checkBoxSound = findViewById(R.id.checkBoxSound);
-        checkBoxSound.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DialogFragment singleChoiceDialog = new AddPagerSoundFragment();
-                singleChoiceDialog.setCancelable((false));
-                singleChoiceDialog.show(getSupportFragmentManager(),"Single Choice Dialog");
-            }
-        });
-    }
+        List<String> categories = new ArrayList<>();
 
-    @Override
-    public void onPositiveButtonClicked(String[] list, int position) {
-
-        textViewPagerSound.setText("Selected item ="+list[position] );
+        Spinner spinnerAddSound = findViewById(R.id.spinnerAddSound);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,  R.array.select_sound,   android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerAddSound.setAdapter(adapter);
+        spinnerAddSound.setOnItemSelectedListener(this);
 
     }
 
     @Override
-    public void onNegativeButtonClicked() {
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String text = parent.getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
 
-        textViewPagerSound.setText("Dialog cancel");
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
     }
 }
+
+
