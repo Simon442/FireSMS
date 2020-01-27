@@ -19,11 +19,12 @@
 
     <Button
         android:id="@+id/splashScreenBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="337dp"
+        android:layout_height="74dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="26dp"
-        android:text="V redu"
+        android:text="Nadaljuj"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -47,8 +48,8 @@
                 android:id="@+id/eulaText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="FireSMS ni nadomestek pozivnikov ali drugih sistemov namenjenih alarmiranju sil enot za zaščito in reševanje. Razivjalec aplikacije FireSMS ni odgovoren in ne more biti odgovoren za nastalo škodo zoper življenje, okolje ali material, ki bi nastala zaradi uporabe FireSMS. Prav tako razvijalec FireSMS tudi ne bo odgovoren, za kakršno koli škodo, ki bi lahko nastala na GSM napravi zaradi uporabe FireSMS. "
-                android:textAlignment="viewStart"
+                android:text="FireSMS ni nadomestek pozivnikov ali drugih sistemov namenjenih alarmiranju sil enot za zaščito in reševanje. Razvijalec aplikacije FireSMS ni odgovoren in ne more biti odgovoren za nastalo škodo zoper življenje, okolje ali material, ki bi nastala zaradi uporabe FireSMS. Prav tako razvijalec FireSMS tudi ne bo odgovoren, za kakršno koli škodo, ki bi lahko nastala na GSM napravi zaradi uporabe FireSMS. "
+                android:textAlignment="center"
                 android:textColor="@color/ic_launcher_background"
                 android:textSize="24sp" />
         </LinearLayout>
