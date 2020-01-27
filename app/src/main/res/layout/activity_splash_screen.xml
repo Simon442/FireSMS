@@ -8,41 +8,50 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="377dp"
-        android:layout_height="271dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:contentDescription="TODO"
         android:src="@mipmap/ic_launcher_foreground"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="373dp"
-        android:layout_height="413dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="16dp"
-        android:text="FireSMS ni nadomestek pozivnikov ali drugih sistemov namenjenih alarmiranju sil enot za zaščito in reševanje. Razivjalec aplikacije FireSMS ni odgovoren in ne more biti odgovoren za nastalo škodo zoper življenje, okolje ali material, ki bi nastala zaradi uporabe FireSMS. Prav tako razvijalec FireSMS tudi ne bo odgovoren, za kakršno koli škodo, ki bi lahko nastala na GSM napravi zaradi uporabe FireSMS. "
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textDirection="firstStrong"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/splashScreenBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/splashScreenBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="284dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="26dp"
         android:text="V redu"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/splashScreenBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/eulaText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FireSMS ni nadomestek pozivnikov ali drugih sistemov namenjenih alarmiranju sil enot za zaščito in reševanje. Razivjalec aplikacije FireSMS ni odgovoren in ne more biti odgovoren za nastalo škodo zoper življenje, okolje ali material, ki bi nastala zaradi uporabe FireSMS. Prav tako razvijalec FireSMS tudi ne bo odgovoren, za kakršno koli škodo, ki bi lahko nastala na GSM napravi zaradi uporabe FireSMS. "
+                android:textAlignment="viewStart"
+                android:textColor="@color/ic_launcher_background"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

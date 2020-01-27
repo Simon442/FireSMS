@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         pref = this.getSharedPreferences("settings", MODE_PRIVATE);
         editor = pref.edit();
+
+        onFirstStartup();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -56,6 +59,20 @@ public class MainActivity extends AppCompatActivity {
     private void setPager(boolean onoff){
         editor.putBoolean("onoff", onoff);
         editor.apply();
+    }
+
+    private void onFirstStartup(){
+        onFirstStartup(false);
+    }
+
+    private void onFirstStartup(boolean forceStartup){
+        if(forceStartup || pref.getBoolean("firstStartup", true)){
+            editor.putBoolean("firstStartup", false);
+            editor.apply();
+
+            openActivity(SplashScreenActivity.class);
+        }
+
     }
 
 }
