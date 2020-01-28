@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageMainWindow"
+        android:layout_width="321dp"
+        android:layout_height="243dp"
+        app:srcCompat="@drawable/blackmainwindow"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <ImageButton
+        android:id="@+id/notComingBtn"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/notcomingbtn"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <ImageButton
+        android:id="@+id/notComingBtn7"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/cominglaterbtn"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <ImageButton
+        android:id="@+id/comingBtn"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/comingbtn"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="136dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="258dp">
+
+        <TextView
+            android:id="@+id/textAlertInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textPagerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

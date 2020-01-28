@@ -16,6 +16,7 @@
     <string name="shrani">SHRANI</string>
     <string name="success_added_pager_msg">Pozivnik dodan</string>
     <string name="failed_add_pager_msg">Dodaj številko ali besedo</string>
+    <string name="test">test</string>
     <string-array name="select_sound">
         <item>Izberi zvok pozivnika</item>
         <item>Pozivnik_1</item>

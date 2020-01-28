@@ -22,13 +22,14 @@ public class AddPagerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(AddPagerActivity.this);
-                View mView = getLayoutInflater().inflate(R.layout.activity_add_pager_dialog,null);
+                View mView = getLayoutInflater().inflate(R.layout.activity_add_new_pager_dialog,null);
                 final EditText mPagerName = mView.findViewById(R.id.textPagerName);
                 final EditText mPhoneNumber = mView.findViewById(R.id.textPhoneNumber);
                 final EditText mKeyword = mView.findViewById(R.id.textKeyword);
-                EditText mMessage = mView.findViewById(R.id.textMessage);
                 EditText mTitle = mView.findViewById(R.id.textFireSMS);
+                EditText mInfo = mView.findViewById(R.id.textIntervencijeText);
                 Button mAddPager = mView.findViewById(R.id.addPagerBtn);
+                Button mCancelAddPager = mView.findViewById(R.id.cancelAddPager);
 
                 mAddPager.setOnClickListener(new View.OnClickListener() {
                     @Override

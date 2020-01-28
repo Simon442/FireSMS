@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textFireSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FireSMS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <EditText
+        android:id="@+id/textPagerName"
+        android:layout_width="283dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ime pozivnika"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <EditText
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="283dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Telefonska številka "
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <EditText
+        android:id="@+id/textKeyword"
+        android:layout_width="283dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Beseda"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/addNewPagerBtn"
+        android:layout_width="89dp"
+        android:layout_height="37dp"
+        android:text="DODAJ"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <Button
+        android:id="@+id/cancelAddPager"
+        android:layout_width="89dp"
+        android:layout_height="37dp"
+        android:text="Prekliči"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Switch
+        android:id="@+id/switchIntervencijeNet"
+        android:layout_width="144dp"
+        android:layout_height="27dp"
+        android:text="Intervencije.net"
+        android:textColor="#870000"
+        android:thumbTint="#870000"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/textIntervencijeText"
+        android:layout_width="119dp"
+        android:layout_height="32dp"
+        android:text="Samo za uporabnike intervencije.net"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
