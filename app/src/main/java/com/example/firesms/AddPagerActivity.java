@@ -35,9 +35,9 @@ public class AddPagerActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         if (!mPagerName.getText().toString().isEmpty() & mKeyword.getText().toString().isEmpty() & mPhoneNumber.getText().toString().isEmpty()){
-                            Toast.makeText(SettingsActivity.this, R.string.success_added_pager_msg, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddPagerActivity.this, R.string.success_added_pager_msg, Toast.LENGTH_SHORT).show();
                         }else {
-                            Toast.makeText(SettingsActivity.this, R.string.failed_add_pager_msg, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddPagerActivity.this, R.string.failed_add_pager_msg, Toast.LENGTH_SHORT).show();
                         }
 
                     }
