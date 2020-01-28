@@ -18,10 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
-    private Spinner spinnerAddSound;
 
 
     @Override
