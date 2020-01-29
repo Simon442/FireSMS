@@ -20,8 +20,8 @@
 
     <EditText
         android:id="@+id/textPagerName"
-        android:layout_width="283dp"
-        android:layout_height="39dp"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="9dp"
         android:ems="10"
@@ -29,20 +29,24 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textPhoneNumber"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textFireSMS" />
 
     <EditText
         android:id="@+id/textKeyword"
-        android:layout_width="283dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="285dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
         android:ems="10"
         android:hint="Beseda"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/addNewPagerBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPhoneNumber" />
 
     <Button
         android:id="@+id/addNewPagerBtn"
@@ -71,8 +75,8 @@
 
     <Switch
         android:id="@+id/switchIntervencijeNet"
-        android:layout_width="144dp"
-        android:layout_height="27dp"
+        android:layout_width="151dp"
+        android:layout_height="43dp"
         android:layout_marginTop="8dp"
         android:text="Intervencije.net"
         android:textColor="#870000"
@@ -83,8 +87,8 @@
 
     <TextView
         android:id="@+id/textIntervencijeText"
-        android:layout_width="119dp"
-        android:layout_height="32dp"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
         android:text="Samo za uporabnike intervencije.net"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
@@ -95,14 +99,17 @@
 
     <EditText
         android:id="@+id/textPhoneNumber"
-        android:layout_width="283dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="7dp"
+        android:layout_width="285dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="Dodaj številko"
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/textKeyword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPagerName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
