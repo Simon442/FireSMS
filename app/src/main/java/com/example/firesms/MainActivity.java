@@ -1,19 +1,15 @@
 package com.example.firesms;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.ListView;
 import android.widget.Switch;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private SharedPreferences pref;
@@ -52,10 +48,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 setPager(isChecked);
-
-        //TODO Dodaj da se na SwtichOn vklopi in SwitchOff izklopi xoxo
+                setService(isChecked);
             }
         });
+
+        setService(pref.getBoolean("onoff", false));
     }
 
     public void openActivity(Class activity) {
@@ -66,6 +63,16 @@ public class MainActivity extends AppCompatActivity {
     private void setPager(boolean onoff){
         editor.putBoolean("onoff", onoff);
         editor.apply();
+    }
+
+    private void setService(boolean onoff){
+        Intent smsService = new Intent(this, ForegroundService.class);
+        if(onoff){
+            ContextCompat.startForegroundService(this, smsService);
+        }
+        else{
+            stopService(smsService);
+        }
     }
 
     private void onFirstStartup(){

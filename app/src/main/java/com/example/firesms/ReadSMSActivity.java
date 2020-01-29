@@ -21,28 +21,17 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 public class ReadSMSActivity extends AppCompatActivity {
-
-    private static ArrayAdapter<String> adapter;
-    ListView ViewSmsList;
     private static final int PERMISSION_REQUEST_READ_CONTACTS = 100;
-    ArrayList<String> ViewSmsList;
-
-    public static void setAdapter(ArrayAdapter<String> adapter) {
-        ReadSMSActivity.adapter = adapter;
-    }
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ViewSmsList = (ListView) findViewById(R.id.smsList);
-
         int permissionCheck = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.READ_SMS);
 
-        if (permissionCheck = PackageManager.PERMISSION_GRANTED) {
+        if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
             showContacts();
 
         } else {
@@ -54,32 +43,32 @@ public class ReadSMSActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (requestCode = PERMISSION_REQUEST_READ_CONTACTS) {
+        if (requestCode == PERMISSION_REQUEST_READ_CONTACTS) {
             showContacts();
         } else {
-            Toast.makeText(this, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Because of rejecting permissions expect the app to not work properly.", Toast.LENGTH_SHORT).show();
         }
     }
 
 
     private void showContacts() {
-        Uri inboxUri = Uri.parse("content:://sms/inbox");
-        ViewSmsList = new ArrayList<>();
+        /*Uri inboxUri = Uri.parse("content:://sms/inbox");
+        ViewSmsList = ArrayList<String>();
         ContentResolver contentResolver =  getContentResolver();
 
         //TODO tukaj se zatakne
         Cursor cursor = contentResolver.query(inboxUri, null, null, null, null);
         while (cursor.moveToNext()) {
-            String number = cursor.getString(cursor.getColumnIndexOrThrow("address")).toString();
-            String body = cursor.getString(cursor.getColumnIndexOrThrow("body")).toString();
-            ViewSmsList ("Number "+number "\n" + "Body +"+body);
+            String number = cursor.getString(cursor.getColumnIndexOrThrow("address"));
+            String body = cursor.getString(cursor.getColumnIndexOrThrow("body"));
+            ViewSmsList("Number " + number + "\n" + "Body" + body);
         }
         cursor.close();
         ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
                 ViewSmsList);
 
-        ReadSMSActivity.setAdapter(adapter);
+        ReadSMSActivity.setAdapter(adapter);*/
 
     }
 }
