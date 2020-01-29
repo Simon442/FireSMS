@@ -52,11 +52,7 @@ public class AddPagerActivity extends AppCompatActivity {
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();
                 dialog.show();
-
-
             }
         });
-
-
     }
 }
