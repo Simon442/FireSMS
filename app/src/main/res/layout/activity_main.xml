@@ -72,7 +72,7 @@
         app:layout_constraintGuide_end="156dp" />
 
     <ListView
-        android:id="@+id/listViewSMS"
+        android:id="@+id/smsList"
         android:layout_width="347dp"
         android:layout_height="430dp"
         android:layout_marginStart="39dp"
