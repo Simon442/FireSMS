@@ -26,7 +26,7 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
 
     }
 
-    //TODO Bodi srček smrček pa poglej zakaj se alerter ne prikaže ko kliknem na gumbek https://github.com/Tapadoo/Alerter
+    //TODO Bodi srček smrček pa poglej zakaj se alerter ne prikaže ko kliknem na gumbek "https://github.com/Tapadoo/Alerter
 
 
 
@@ -37,7 +37,6 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
                 .setText("//SMS Sproočilo//")
                 .setIcon(R.drawable.ic_launcher_foreground)
                 .setDuration(10000)
-                .enableProgress()
                 .enableSwipeToDismiss()
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
