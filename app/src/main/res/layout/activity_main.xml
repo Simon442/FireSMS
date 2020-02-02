@@ -71,19 +71,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="156dp" />
 
-    <ListView
-        android:id="@+id/smsList"
-        android:layout_width="347dp"
-        android:layout_height="430dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/addPagerBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleText" />
-
     <Button
         android:id="@+id/devOptionsBtn"
         android:layout_width="wrap_content"
@@ -95,5 +82,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/settingBtn"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/smsList"
+        android:layout_width="363dp"
+        android:layout_height="448dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/addPagerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

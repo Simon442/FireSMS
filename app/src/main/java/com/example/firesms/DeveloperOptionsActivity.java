@@ -26,25 +26,25 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
 
     }
 
-    //TODO Bodi srček smrček pa poglej zakaj se alerter ne prikaže ko kliknem na gumbek "https://github.com/Tapadoo/Alerter
+    //TODO Bodi srček smrček pa poglej zakaj se alerter ne prikaže ko kliknem na gumbek https://github.com/Tapadoo/Alerter
 
 
 
     public void testAlerterBtn(View view) {
 
         Alerter.create(this)
-                .setTitle("FireSMS")
+                .setTitle("//Ime Pozivnika//")
                 .setText("//SMS Sproočilo//")
                 .setIcon(R.drawable.ic_launcher_foreground)
                 .setDuration(10000)
+                .enableProgress(true)
                 .enableSwipeToDismiss()
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(DeveloperOptionsActivity.this, "", Toast.LENGTH_SHORT).show();
+
                     }
                 })
                 .show();
-
     }
 }
