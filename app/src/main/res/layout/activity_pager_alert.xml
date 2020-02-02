@@ -15,16 +15,11 @@
         tools:layout_editor_absoluteY="220dp" />
 
     <LinearLayout
-        android:layout_width="240dp"
-        android:layout_height="136dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="244dp"
+        android:layout_height="130dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/imageMainWindow"
-        app:layout_constraintEnd_toEndOf="@+id/imageMainWindow"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="@+id/imageMainWindow"
-        app:layout_constraintTop_toTopOf="@+id/imageMainWindow"
-        app:layout_constraintVertical_bias="0.0">
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="260dp">
 
         <TextView
             android:id="@+id/textAlertInformation"

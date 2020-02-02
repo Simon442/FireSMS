@@ -42,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button devOptionsBtn = findViewById(R.id.devOptionsBtn);
+        devOptionsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(DeveloperOptionsActivity.class);
+            }
+        });
+
         Switch onoffSwitch = findViewById(R.id.onoffSwitch);
         onoffSwitch.setChecked(pref.getBoolean("onoff", false));
         onoffSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

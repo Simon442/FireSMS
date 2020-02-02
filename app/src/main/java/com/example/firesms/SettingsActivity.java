@@ -1,15 +1,21 @@
 package com.example.firesms;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.text.Layout;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +33,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+
         List<String> categories = new ArrayList<>();
 
         Spinner spinnerAddSound = findViewById(R.id.spinnerAddSound);
@@ -34,6 +41,8 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerAddSound.setAdapter(adapter);
         spinnerAddSound.setOnItemSelectedListener(this);
+
+
 
     }
 

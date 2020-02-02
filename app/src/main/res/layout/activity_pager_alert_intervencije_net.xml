@@ -24,7 +24,7 @@
         tools:layout_editor_absoluteY="418dp" />
 
     <ImageButton
-        android:id="@+id/notComingBtn7"
+        android:id="@+id/comingLaterBtn"
         android:layout_width="71dp"
         android:layout_height="30dp"
         android:background="#00FFFFFF"
@@ -42,11 +42,11 @@
         tools:layout_editor_absoluteY="418dp" />
 
     <LinearLayout
-        android:layout_width="240dp"
-        android:layout_height="136dp"
+        android:layout_width="244dp"
+        android:layout_height="130dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="258dp">
+        tools:layout_editor_absoluteY="260dp">
 
         <TextView
             android:id="@+id/textAlertInformation"

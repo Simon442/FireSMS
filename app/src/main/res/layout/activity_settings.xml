@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBoxSilentMode" />
 
     <SeekBar
-        android:id="@+id/seekBarVolume"
+        android:id="@+id/seekBarVolumeSlider"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginStart="32dp"
@@ -96,5 +96,20 @@
         android:layout_marginTop="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxVibration" />
+
+    <CheckBox
+        android:id="@+id/checkBoxShowAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="137dp"
+        android:text="Prikaži samo notifikacijo v primeru da je telefon odklenjen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarVolumeSlider" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

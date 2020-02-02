@@ -26,7 +26,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:text="pozivniki"
+        android:text="@string/pozivniki"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -83,5 +83,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <Button
+        android:id="@+id/devOptionsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/dev_options"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settingBtn"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

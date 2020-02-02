@@ -19,6 +19,9 @@
     <string name="service_working">Deluje</string>
     <string name="service_description">Obvestilo potrebno za pravilno delovanje pozivnika.</string>
     <string name="test">test</string>
+    <string name="pozivno_okence_ez_ekran">Pozivno okence čez ekran</string>
+    <string name="dev_options">dev options</string>
+    <string name="pozivniki">pozivniki</string>
     <string-array name="select_sound">
         <item>Izberi zvok pozivnika</item>
         <item>Pozivnik_1</item>
