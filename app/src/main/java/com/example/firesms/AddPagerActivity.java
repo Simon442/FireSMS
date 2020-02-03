@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class AddPagerActivity extends AppCompatActivity {
 
     @Override
@@ -52,7 +54,9 @@ public class AddPagerActivity extends AppCompatActivity {
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();
                 dialog.show();
+
             }
         });
+
     }
 }

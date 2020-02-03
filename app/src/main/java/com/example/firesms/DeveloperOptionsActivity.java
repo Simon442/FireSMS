@@ -14,16 +14,21 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_developer_options);
-    }
 
-    public void testAlerterBtn(View view) {
+        Button testAlerterBtn = (Button) findViewById(R.id.testAlerterBtn);
+        testAlerterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Alerter.create(DeveloperOptionsActivity.this)
+                        .setTitle("FireSMS")
+                        .setText("//SMS Sporočilo")
+                        .setIcon(R.mipmap.ic_launcher_foreground)
+                        .setDuration(10000)
+                        .show();
+            }
+        });
 
-        Alerter.create(this)
-                .setTitle("//Ime Pozivnika//")
-                .setText("//SMS Sporočilo")
-                .setIcon(R.mipmap.ic_launcher_foreground)
-                .setDuration(10000)
-                .show();
+
     }
 
 }

@@ -20,12 +20,16 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
+    private TextView seekBarVolumeNumber;
+    private SeekBar seekBarVolumeSlider;
 
 
     @Override
@@ -42,7 +46,25 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         spinnerAddSound.setAdapter(adapter);
         spinnerAddSound.setOnItemSelectedListener(this);
 
+        seekBarVolumeNumber = (TextView) findViewById(R.id.seekBarVolumeNumber);
+        seekBarVolumeSlider = (SeekBar) findViewById(R.id.seekBarVolumeSlider);
 
+        seekBarVolumeSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                seekBarVolumeNumber.setText(""+progress+"%");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
     }
 

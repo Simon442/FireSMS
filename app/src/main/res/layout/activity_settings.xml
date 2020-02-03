@@ -113,30 +113,16 @@
         app:layout_constraintTop_toBottomOf="@+id/seekBarVolumeSlider" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/seekBarVolumeNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="205dp"
-        android:text="@string/opozorilo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="24dp"
+        android:text="0%"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxShowAlertDialog"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxShowAlertDialog" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="229dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="101dp"
-        android:singleLine="false"
-        android:text="Ob vsaki spremenjeni nastavitvi obvezno testirajte pozivnik. Test bo pričel z izvajanjem v 5 sekundah. Lahko izklopite ekran."
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
