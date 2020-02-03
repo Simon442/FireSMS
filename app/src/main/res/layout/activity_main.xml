@@ -84,7 +84,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ScrollView
-        android:id="@+id/smsList"
+        android:id="@+id/pagerList"
         android:layout_width="363dp"
         android:layout_height="448dp"
         android:layout_marginStart="24dp"
