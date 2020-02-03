@@ -132,7 +132,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="101dp"
         android:singleLine="false"
-        android:text="@string/ob_vsaki_spremenjeni_nastavitvi_obvezno_testiraj_pozivnik_v_asu_5_sekund_bo_test_pri_el_z_izvajanjem_v_tem_asu_lahko_izklopite_ekran"
+        android:text="Ob vsaki spremenjeni nastavitvi obvezno testirajte pozivnik. Test bo pričel z izvajanjem v 5 sekundah. Lahko izklopite ekran."
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"

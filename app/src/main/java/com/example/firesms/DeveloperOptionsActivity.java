@@ -1,13 +1,12 @@
 package com.example.firesms;
 
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.Button;
 
-import com.tapadoo.alerter.Alerter;
+        import com.tapadoo.alerter.Alerter;
 
 public class DeveloperOptionsActivity extends AppCompatActivity {
 
@@ -15,36 +14,16 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_developer_options);
-
-        Button testAlerterBtn = findViewById(R.id.testAlerterBtn);
-        testAlerterBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
     }
-
-    //TODO Bodi srček smrček pa poglej zakaj se alerter ne prikaže ko kliknem na gumbek https://github.com/Tapadoo/Alerter
-
-
 
     public void testAlerterBtn(View view) {
 
         Alerter.create(this)
                 .setTitle("//Ime Pozivnika//")
-                .setText("//SMS Sproočilo//")
-                .setIcon(R.drawable.ic_launcher_foreground)
+                .setText("//SMS Sporočilo")
+                .setIcon(R.mipmap.ic_launcher_foreground)
                 .setDuration(10000)
-                .enableProgress(true)
-                .enableSwipeToDismiss()
-                .setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                    }
-                })
                 .show();
     }
+
 }
