@@ -12,7 +12,7 @@
         android:layout_margin="4dp">
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ime"
@@ -23,7 +23,7 @@
             tools:layout_editor_absoluteY="6dp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Številka"
@@ -34,7 +34,7 @@
             tools:layout_editor_absoluteY="38dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textWord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Beseda"

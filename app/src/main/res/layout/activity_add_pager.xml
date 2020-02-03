@@ -7,7 +7,7 @@
     tools:context=".AddPagerActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
@@ -34,7 +34,7 @@
         app:srcCompat="@mipmap/ic_launcher_foreground" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textNumber"
         android:layout_width="19dp"
         android:layout_height="48dp"
         android:layout_marginStart="296dp"
