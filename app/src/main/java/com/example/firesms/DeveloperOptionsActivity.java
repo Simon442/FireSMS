@@ -22,12 +22,9 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
                Alerter.create(DeveloperOptionsActivity.this)
                         .setTitle("FireSMS")
                         .setText("//SMS Sporočilo")
-                        .setIcon(R.drawable.bellalert)
+                        .setIcon(R.drawable.bellalerter)
                         .setDuration(10000)
                         .enableSwipeToDismiss()
-                        .addButton("NE", R.style.AlertButton, View.OnClickListener)
-                        .addButton("DaK", R.style.AlertButton, View.OnClickListener)
-                        .addButton("DA", R.style.AlertButton, View.OnClickListener)
                         .show();
             }
         });

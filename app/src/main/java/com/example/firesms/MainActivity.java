@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //TODO Zamenjat gumbe z navigation bar
+        //TODO Pusti switch pa developer options
+
         Button addPagerBtn = findViewById(R.id.addPagerBtn);
         addPagerBtn.setOnClickListener(new View.OnClickListener() {
             @Override

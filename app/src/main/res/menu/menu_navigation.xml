@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addPagerBarBtn"
+        android:icon="@drawable/ic_addpager_vector"/>
+
+    <item
+        android:id="@+id/mainMenuBarBtn"
+        android:icon="@drawable/ic_main_menu_vector"/>
+
+    <item
+        android:id="@+id/settingsBarBtn"
+        android:icon="@drawable/ic_settings_vector"/>
+
+
+
+
+</menu>

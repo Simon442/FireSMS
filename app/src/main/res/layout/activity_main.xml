@@ -4,8 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundTint="#870000"
-    tools:context=".MainActivity">
+    android:foregroundTint="#CA9696"
+    tools:context=".MainActivity"><![CDATA[
+
+    />
+
+    ]]>
+
+
 
     <TextView
         android:id="@+id/titleText"
@@ -19,6 +25,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="454dp"
+        android:layout_height="64dp"
+        android:background="#870000"
+        android:scrollbarSize="4dp"
+        app:itemIconSize="45dp"
+        app:itemIconTint="00FFFFFF"
+        app:itemTextColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" />
 
     <Button
         android:id="@+id/addPagerBtn"
@@ -69,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="156dp" />
+        app:layout_constraintGuide_begin="490dp" />
 
     <Button
         android:id="@+id/devOptionsBtn"
@@ -77,16 +98,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginEnd="98dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="116dp"
         android:text="@string/dev_options"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/settingBtn"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ScrollView
         android:id="@+id/pagerList"
-        android:layout_width="363dp"
-        android:layout_height="448dp"
+        android:layout_width="332dp"
+        android:layout_height="359dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="35dp"
@@ -99,5 +121,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
