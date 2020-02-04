@@ -9,19 +9,19 @@
         android:id="@+id/menuDrawerBtn"
         android:icon="@drawable/ic_format_list_vector"
         android:title="Začetni zaslon"
-        app:cnb_iconColor="#FF333333" />
+        app:cnb_iconColor="#FF000000" />
 
     <item
         android:id="@+id/addPagerDrawerBtn"
         android:icon="@drawable/ic_addpager_vector"
         android:title="Pozivnik"
-        app:cnb_iconColor="#FF333333" />
+        app:cnb_iconColor="#FF000000" />
 
     <item
         android:id="@+id/settingsDrawerBtn"
         android:icon="@drawable/ic_settings_vector"
         android:title="Nastavitve"
-        app:cnb_iconColor="#FF333333" />
+        app:cnb_iconColor="#FF000000" />
 
 
 

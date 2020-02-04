@@ -15,15 +15,20 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_developer_options);
 
+        //TODO Nardit gumbke https://github.com/Tapadoo/Alerter
+        //TODO Implementirat v aplikacijo da se prikaže samo takrat ko je nastavitev vklopljena
+
+
         Button testAlerterBtn = (Button) findViewById(R.id.testAlerterBtn);
         testAlerterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                Alerter.create(DeveloperOptionsActivity.this)
-                        .setTitle("FireSMS")
-                        .setText("//SMS Sporočilo")
+                        .setTitle("Ime Pozivnika")
+                        .setText("SMS Sporočilo")
                         .setIcon(R.drawable.bellalerter)
-                        .setDuration(10000)
+                        .setDuration(999999999)
+                        .setBackgroundColorRes(R.color.colorPrimary)
                         .enableSwipeToDismiss()
                         .show();
             }

@@ -19,7 +19,7 @@
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:layout_width="410dp"
         android:layout_height="81dp"
-        android:background="#FFFFFF"
+        android:background="#FAFAFA"
         android:gravity="center"
         app:cnb_menuResource="@menu/bottom_bar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,9 +110,10 @@
         android:layout_height="359dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="192dp"
         app:layout_constraintBottom_toTopOf="@+id/addPagerBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
