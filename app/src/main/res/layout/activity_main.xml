@@ -17,6 +17,7 @@
     ]]>
 
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_bar"
         android:layout_width="410dp"
         android:layout_height="81dp"
         android:background="#FAFAFA"
