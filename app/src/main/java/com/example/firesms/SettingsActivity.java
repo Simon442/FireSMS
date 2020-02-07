@@ -65,6 +65,15 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
             }
         });
+//TODO Testira pozivnik v 5 sekundah
+        Button testPagerBtn = findViewById(R.id.testPagerBtn);
+        testPagerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SettingsActivity.this, "Test bo se začel izvajati v 5 sekundah", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
     }
 
