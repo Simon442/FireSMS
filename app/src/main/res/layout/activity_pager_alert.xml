@@ -10,7 +10,7 @@
         android:id="@+id/imageMainWindow"
         android:layout_width="321dp"
         android:layout_height="243dp"
-        app:srcCompat="@drawable/blackMainWindow2"
+        app:srcCompat="@drawable/blackmainwindow2"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="220dp" />
 
@@ -40,3 +40,4 @@
         tools:layout_editor_absoluteY="223dp" />
 
 
+</androidx.constraintlayout.widget.ConstraintLayout>
