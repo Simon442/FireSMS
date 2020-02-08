@@ -26,6 +26,7 @@
     <string name="prika_i_samo_notifikacijo_v_primeru_da_je_telefon_odklenjen">Prikaži samo notifikacijo v primeru da je telefon odklenjen</string>
     <string name="opozorilo">OPOZORILO</string>
     <string name="ob_vsaki_spremenjeni_nastavitvi_obvezno_testiraj_pozivnik_v_asu_5_sekund_bo_test_pri_el_z_izvajanjem_v_tem_asu_lahko_izklopite_ekran">Ob vsaki spremenjeni nastavitvi obvezno testiraj pozivnik! V času 5 sekund bo test pričel z izvajanjem. V tem času lahko izklopite ekran.</string>
+    <string name="_0">0%</string>
     <string-array name="select_sound">
         <item>Izberi zvok pozivnika</item>
         <item>Pozivnik_1</item>

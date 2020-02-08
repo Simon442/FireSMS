@@ -70,7 +70,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         testPagerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SettingsActivity.this, "Test bo se začel izvajati v 5 sekundah", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SettingsActivity.this, "Test se bo pričel izvajati v 5 sekundah", Toast.LENGTH_SHORT).show();
 
             }
         });

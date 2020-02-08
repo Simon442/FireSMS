@@ -10,7 +10,7 @@
         android:id="@+id/imageMainWindow"
         android:layout_width="321dp"
         android:layout_height="243dp"
-        app:srcCompat="@drawable/blackmainwindow"
+        app:srcCompat="@drawable/blackMainWindow2"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="220dp" />
 
@@ -20,8 +20,8 @@
         android:layout_height="30dp"
         android:background="#00FFFFFF"
         app:srcCompat="@drawable/notcomingbtn"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="425dp" />
 
     <ImageButton
         android:id="@+id/comingLaterBtn"
@@ -30,7 +30,7 @@
         android:background="#00FFFFFF"
         app:srcCompat="@drawable/cominglaterbtn"
         tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:layout_editor_absoluteY="425dp" />
 
     <ImageButton
         android:id="@+id/comingBtn"
@@ -38,14 +38,14 @@
         android:layout_height="30dp"
         android:background="#00FFFFFF"
         app:srcCompat="@drawable/comingbtn"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="425dp" />
 
     <LinearLayout
-        android:layout_width="244dp"
-        android:layout_height="130dp"
+        android:layout_width="243dp"
+        android:layout_height="132dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="260dp">
 
         <TextView
@@ -63,6 +63,6 @@
         android:text="TextView"
         android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="220dp" />
+        tools:layout_editor_absoluteY="223dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

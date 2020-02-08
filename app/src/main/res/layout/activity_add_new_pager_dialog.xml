@@ -75,25 +75,14 @@
         android:id="@+id/switchIntervencijeNet"
         android:layout_width="151dp"
         android:layout_height="43dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:text="Intervencije.net"
         android:textColor="#870000"
         android:thumbTint="#870000"
         app:layout_constraintEnd_toStartOf="@+id/addNewPagerBtn"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textKeyword" />
-
-    <TextView
-        android:id="@+id/textIntervencijeText"
-        android:layout_width="132dp"
-        android:layout_height="48dp"
-        android:text="Samo za uporabnike intervencije.net"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/cancelAddPager"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchIntervencijeNet" />
 
     <EditText
         android:id="@+id/textPhoneNumber"
