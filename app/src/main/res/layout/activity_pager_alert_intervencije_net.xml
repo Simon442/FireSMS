@@ -10,49 +10,22 @@
         android:id="@+id/imageMainWindow"
         android:layout_width="321dp"
         android:layout_height="243dp"
-        app:srcCompat="@drawable/blackmainwindow2"
+        app:srcCompat="@drawable/AlertDialog"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="220dp" />
 
-    <ImageButton
-        android:id="@+id/notComingBtn"
-        android:layout_width="71dp"
-        android:layout_height="30dp"
-        android:background="#00FFFFFF"
-        app:srcCompat="@drawable/notcomingbtn"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="425dp" />
-
-    <ImageButton
-        android:id="@+id/comingLaterBtn"
-        android:layout_width="71dp"
-        android:layout_height="30dp"
-        android:background="#00FFFFFF"
-        app:srcCompat="@drawable/cominglaterbtn"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="425dp" />
-
-    <ImageButton
-        android:id="@+id/comingBtn"
-        android:layout_width="71dp"
-        android:layout_height="30dp"
-        android:background="#00FFFFFF"
-        app:srcCompat="@drawable/comingbtn"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="425dp" />
-
     <LinearLayout
-        android:layout_width="243dp"
-        android:layout_height="132dp"
+        android:layout_width="276dp"
+        android:layout_height="147dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="260dp">
 
         <TextView
             android:id="@+id/textAlertInformation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="smsSporočilo"
             android:textColor="#000000" />
     </LinearLayout>
 
@@ -60,9 +33,44 @@
         android:id="@+id/textPagerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="imePozivnika"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="223dp" />
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/notComingBtn"
+        android:layout_width="77dp"
+        android:layout_height="33dp"
+        android:background="@drawable/custom_buttons"
+        android:backgroundTint="#97191D"
+        android:text="Ne"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <Button
+        android:id="@+id/comingLaterBtn"
+        android:layout_width="77dp"
+        android:layout_height="33dp"
+        android:background="@drawable/custom_buttons"
+        android:backgroundTint="#CB8A0D"
+        android:text="DaK"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <Button
+        android:id="@+id/comingLaterBtn2"
+        android:layout_width="77dp"
+        android:layout_height="33dp"
+        android:background="@drawable/custom_buttons"
+        android:backgroundTint="#3F8F44"
+        android:text="Da"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="425dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

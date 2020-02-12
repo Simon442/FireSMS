@@ -6,26 +6,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+
     <ImageView
         android:id="@+id/imageMainWindow"
         android:layout_width="321dp"
         android:layout_height="243dp"
-        app:srcCompat="@drawable/blackmainwindow2"
+        app:srcCompat="@drawable/AlertDialog2"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="220dp" />
 
     <LinearLayout
-        android:layout_width="243dp"
-        android:layout_height="132dp"
+        android:layout_width="247dp"
+        android:layout_height="123dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="260dp">
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="259dp">
 
         <TextView
             android:id="@+id/textAlertInformation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="smsSporočilo"
             android:textColor="#000000" />
 
     </LinearLayout>
@@ -34,10 +37,22 @@
         android:id="@+id/textPagerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="imePozivnika"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="223dp" />
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/silenceBtn"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_buttons"
+        android:fontFamily="sans-serif-medium"
+        android:text="Utišaj"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="405dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
