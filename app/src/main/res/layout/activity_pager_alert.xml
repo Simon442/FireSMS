@@ -58,7 +58,6 @@
         app:button_top_padding="6dp"
         app:has_activate_state="true"
         app:initial_state="disabled"
-        app:inner_text=""
         app:inner_text_background="@drawable/shape_rounded"
         app:inner_text_bottom_padding="2dp"
         app:inner_text_color="@android:color/black"
