@@ -5,4 +5,5 @@
     <color name="colorAccent">#870000</color>
     <color name="alerterColor">#000000</color>
     <color name="transparent">@android:color/transparent</color>
+    <color name="white_main">#F1F1F1</color>
 </resources>
