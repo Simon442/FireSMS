@@ -10,15 +10,15 @@
         android:id="@+id/imageMainWindow"
         android:layout_width="321dp"
         android:layout_height="243dp"
-        app:srcCompat="@drawable/AlertDialog"
+        app:srcCompat="@drawable/alertdialog"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="220dp" />
 
     <LinearLayout
-        android:layout_width="276dp"
+        android:layout_width="288dp"
         android:layout_height="147dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="260dp">
 
         <TextView
@@ -52,7 +52,7 @@
 
     <Button
         android:id="@+id/comingLaterBtn"
-        android:layout_width="77dp"
+        android:layout_width="74dp"
         android:layout_height="33dp"
         android:background="@drawable/custom_buttons"
         android:backgroundTint="#CB8A0D"
@@ -67,7 +67,7 @@
         android:layout_width="77dp"
         android:layout_height="33dp"
         android:background="@drawable/custom_buttons"
-        android:backgroundTint="#3F8F44"
+        android:backgroundTint="#2D682E"
         android:text="Da"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="264dp"

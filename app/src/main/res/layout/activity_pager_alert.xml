@@ -13,16 +13,16 @@
         android:id="@+id/imageMainWindow"
         android:layout_width="321dp"
         android:layout_height="243dp"
-        app:srcCompat="@drawable/AlertDialog2"
+        app:srcCompat="@drawable/alertdialog2"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="220dp" />
 
     <LinearLayout
-        android:layout_width="247dp"
-        android:layout_height="123dp"
+        android:layout_width="251dp"
+        android:layout_height="128dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="259dp">
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="256dp">
 
         <TextView
             android:id="@+id/textAlertInformation"
@@ -43,16 +43,30 @@
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="220dp" />
 
-    <Button
-        android:id="@+id/silenceBtn"
-        android:layout_width="204dp"
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipe_btn"
+        android:layout_width="218dp"
         android:layout_height="48dp"
-        android:background="@drawable/custom_buttons"
-        android:fontFamily="sans-serif-medium"
-        android:text="Utišaj"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="405dp" />
+        app:button_background="@drawable/shape_button"
+        app:button_bottom_padding="5dp"
+        app:button_image_disabled="@drawable/ic_notifications_paused_black_24dp"
+        app:button_image_enabled="@drawable/ic_notifications_off_black_24dp"
+        app:button_image_height="500dp"
+        app:button_image_width="50dp"
+        app:button_left_padding="10dp"
+        app:button_right_padding="10dp"
+        app:button_top_padding="6dp"
+        app:has_activate_state="true"
+        app:initial_state="disabled"
+        app:inner_text=""
+        app:inner_text_background="@drawable/shape_rounded"
+        app:inner_text_bottom_padding="2dp"
+        app:inner_text_color="@android:color/black"
+        app:inner_text_size="10sp"
+        app:inner_text_top_padding="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="404dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

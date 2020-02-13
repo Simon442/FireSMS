@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         //TODO Poglej kaj je tukaj narobe da crasha
 
+
+
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_bar);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
