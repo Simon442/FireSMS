@@ -64,8 +64,8 @@
         app:inner_text_size="10sp"
         app:inner_text_top_padding="20dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="404dp" />
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="406dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,16 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTint="#CA9696"
-    tools:context=".MainActivity"><![CDATA[
+    tools:context=".MainActivity">
 
-    />
-
-
-
-
-
-
-    ]]>
 
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/bottom_bar"
@@ -41,79 +33,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/addPagerBtn"
-        android:layout_width="136dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/pozivniki"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <Button
-        android:id="@+id/settingBtn"
-        android:layout_width="136dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/nastavitve"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addPagerBtn" />
-
-    <TextView
-        android:id="@+id/onoffText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/vklopi"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#FF870000"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
     <Switch
         android:id="@+id/onoffSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
         android:button="@color/colorPrimaryDark"
         android:buttonTint="#870000"
+        android:text="@string/vklopi"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#97191D"
+        android:textSize="24sp"
         android:thumbTint="@color/colorAccent"
-        app:layout_constraintStart_toEndOf="@+id/onoffText"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:layout_editor_absoluteX="16dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="490dp" />
+        app:layout_constraintGuide_begin="571dp" />
 
     <Button
         android:id="@+id/devOptionsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/dev_options"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/settingBtn"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ScrollView
         android:id="@+id/pagerList"
-        android:layout_width="332dp"
-        android:layout_height="359dp"
+        android:layout_width="334dp"
+        android:layout_height="447dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/addPagerBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
