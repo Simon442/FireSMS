@@ -37,7 +37,8 @@
         android:id="@+id/onoffSwitch"
         android:layout_width="146dp"
         android:layout_height="36dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:button="@color/colorPrimaryDark"
         android:buttonTint="#870000"
         android:text="@string/vklopi"
@@ -46,8 +47,8 @@
         android:textColor="#97191D"
         android:textSize="24sp"
         android:thumbTint="@color/colorAccent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -60,8 +61,8 @@
         android:id="@+id/devOptionsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginBottom="88dp"
         android:text="@string/dev_options"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

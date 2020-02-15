@@ -45,7 +45,7 @@
 
     <com.ebanx.swipebtn.SwipeButton
         android:id="@+id/swipe_btn"
-        android:layout_width="218dp"
+        android:layout_width="220dp"
         android:layout_height="48dp"
         app:button_background="@drawable/shape_button"
         app:button_bottom_padding="5dp"
@@ -64,7 +64,7 @@
         app:inner_text_size="10sp"
         app:inner_text_top_padding="20dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteX="94dp"
         tools:layout_editor_absoluteY="406dp" />
 
 
