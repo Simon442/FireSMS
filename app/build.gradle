@@ -38,4 +38,5 @@ dependencies {
     implementation 'com.jcminarro:RoundKornerLayouts:0.2.0'
     implementation 'com.ebanx:swipe-button:0.8.3'
 
+
 }
