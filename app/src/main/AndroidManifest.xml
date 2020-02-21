@@ -25,7 +25,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DeveloperOptionsActivity"></activity>
+        <receiver
+            android:name=".MySmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".DeveloperOptionsActivity" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".AddPagerActivity">
