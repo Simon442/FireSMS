@@ -19,7 +19,8 @@ public class MySmsReceiver extends BroadcastReceiver {
             MySmsReceiver.class.getSimpleName();
 
     public static final String pdu_type = "pdus";
-    @TargetApi(Build.VERSION_CODES.M)
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onReceive(Context context, Intent intent) {
         // Get the SMS message.
@@ -48,7 +49,7 @@ public class MySmsReceiver extends BroadcastReceiver {
                 if (isVersionM) {
 
 
-                    // If Android version M or newer:
+                    // If Android version L or newer:
                     msgs[i] = SmsMessage.createFromPdu((byte[]) pdus[i], format);
                 } else {
 
