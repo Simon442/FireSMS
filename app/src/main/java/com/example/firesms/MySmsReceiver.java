@@ -10,6 +10,9 @@ import android.telephony.SmsMessage;
 import android.util.Log;
 import android.widget.Toast;
 
+//https://google-developer-training.github.io/android-developer-phone-sms-course/Lesson%202/2_p_2_sending_sms_messages.html#task3intro
+//https://javapapers.com/android/android-receive-sms-tutorial/
+
 public class MySmsReceiver extends BroadcastReceiver {
 
     private static final String TAG =
