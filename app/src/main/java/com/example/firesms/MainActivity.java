@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button devOptionsBtn = findViewById(R.id.settingsBtn);
+        Button devOptionsBtn = findViewById(R.id.devOptionsBtn);
         devOptionsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -20,7 +20,7 @@ public class MySmsReceiver extends BroadcastReceiver {
 
     public static final String pdu_type = "pdus";
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    @androidx.annotation.RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onReceive(Context context, Intent intent) {
         // Get the SMS message.
@@ -36,8 +36,8 @@ public class MySmsReceiver extends BroadcastReceiver {
 
 
             // Check the Android version.
-            boolean isVersionM =
-                    (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M);
+            boolean isVersionL =
+                    (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP);
 
 
             // Fill the msgs array.
@@ -46,7 +46,7 @@ public class MySmsReceiver extends BroadcastReceiver {
 
 
                 // Check Android version and use appropriate createFromPdu.
-                if (isVersionM) {
+                if (isVersionL) {
 
 
                     // If Android version L or newer:

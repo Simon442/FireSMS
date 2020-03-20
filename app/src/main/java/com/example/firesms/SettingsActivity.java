@@ -41,7 +41,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         List<String> categories = new ArrayList<>();
 
         Spinner spinnerAddSound = findViewById(R.id.spinnerAddSound);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,  R.array.select_sound,   android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.select_sound, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerAddSound.setAdapter(adapter);
         spinnerAddSound.setOnItemSelectedListener(this);
@@ -52,7 +52,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         seekBarVolumeSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                seekBarVolumeNumber.setText(""+progress+"%");
+                seekBarVolumeNumber.setText("" + progress + "%");
             }
 
             @Override
@@ -75,12 +75,22 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
             }
         });
 
+        //TODO Shrani nastavitve
+
+        Button saveSettingBtn = findViewById(R.id.saveSettingsBtn);
+        saveSettingBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SettingsActivity.this, "Uspešno shranjeno. PRIPOROČENO TESTIRANJE", Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
+
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String text = parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
 
     }
 
