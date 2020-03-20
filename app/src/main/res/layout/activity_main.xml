@@ -8,18 +8,6 @@
     tools:context=".MainActivity">
 
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/bottom_bar"
-        android:layout_width="410dp"
-        android:layout_height="81dp"
-        android:layout_marginEnd="1dp"
-        android:background="#FAFAFA"
-        android:gravity="center"
-        app:cnb_menuResource="@menu/bottom_bar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -58,7 +46,27 @@
         app:layout_constraintGuide_begin="571dp" />
 
     <Button
-        android:id="@+id/devOptionsBtn"
+        android:id="@+id/settingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/nastavitve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addPagerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/dodaj_pozivnik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/devOptionsBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="256dp"

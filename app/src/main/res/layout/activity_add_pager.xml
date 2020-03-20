@@ -51,12 +51,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="196dp" />
+        app:layout_constraintGuide_percent="0.79" />
 
     <ListView
         android:id="@+id/pagerList"
-        android:layout_width="301dp"
-        android:layout_height="378dp"
+        android:layout_width="304dp"
+        android:layout_height="419dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="55dp"
