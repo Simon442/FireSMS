@@ -47,21 +47,27 @@
 
     <Button
         android:id="@+id/settingsBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="137dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="36dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/ic_settingssvg_35dp"
         android:text="@string/nastavitve"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/addPagerBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginBottom="16dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="136dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="228dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/ic_addpagersvg_35dp"
         android:text="@string/dodaj_pozivnik"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -69,8 +75,8 @@
         android:id="@+id/devOptionsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="256dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/dev_options"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

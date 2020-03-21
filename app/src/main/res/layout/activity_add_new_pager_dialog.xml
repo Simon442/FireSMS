@@ -91,7 +91,7 @@
         android:layout_marginTop="9dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Dodaj številko"
+        android:hint="Tel. številka"
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/textKeyword"
         app:layout_constraintEnd_toEndOf="parent"
