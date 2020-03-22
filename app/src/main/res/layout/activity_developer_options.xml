@@ -22,7 +22,9 @@
         android:id="@+id/fullscreenPagerBtn"
         android:layout_width="123dp"
         android:layout_height="51dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="10dp"
         android:text="poziv"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="247dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testAlerterBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
