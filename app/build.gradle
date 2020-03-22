@@ -38,7 +38,7 @@ dependencies {
     implementation 'com.jcminarro:RoundKornerLayouts:0.2.0'
     implementation 'com.ebanx:swipe-button:0.8.3'
     implementation 'com.karumi:dexter:6.0.2'
-    implementation 'gun0912.ted:tedpermission:2.2.3'
+    implementation 'pub.devrel:easypermissions:3.0.0'
 
 
 }

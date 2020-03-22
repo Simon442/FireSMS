@@ -17,4 +17,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fullscreenPagerBtn"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:text="poziv"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="247dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
