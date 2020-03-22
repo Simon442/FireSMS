@@ -97,4 +97,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void checkPermissions(View view) {
+    }
 }
