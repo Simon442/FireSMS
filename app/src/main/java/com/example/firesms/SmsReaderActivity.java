@@ -68,7 +68,7 @@ public class SmsReaderActivity extends AppCompatActivity {
             String body = cursor.getString(cursor.getColumnIndexOrThrow("body")).toString();
 
             smsList.add("Date: "+date + "Number: "+number+ "\n" + "Body: "+body);
-            Log.d(TAG, "showContacts: number: "+number+" body:" +body);
+            Log.d(TAG, "showContacts: number: "+number+" body:" +body + "body" +date);
         }
         cursor.close();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
