@@ -77,14 +77,15 @@
         android:id="@+id/devOptionsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="88dp"
         android:text="@string/dev_options"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
         android:id="@+id/pagerList"
+        style="@style/Widget.AppCompat.ListView"
         android:layout_width="303dp"
         android:layout_height="412dp"
         android:layout_marginStart="49dp"
@@ -97,19 +98,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:listfooter="@android:layout/simple_list_item_1"
         tools:visibility="visible" />
-
-    <ToggleButton
-        android:id="@+id/permissionsBtn"
-        android:layout_width="94dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="8dp"
-        android:buttonTint="#FFFFFF"
-        android:text="@string/klikni_me"
-        android:textOff="@string/klikni_me"
-        android:textOn="@string/deluje"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pagerList" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

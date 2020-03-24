@@ -16,7 +16,7 @@ import androidx.core.content.ContextCompat;
 
 public class PermissionsActivity extends AppCompatActivity {
 
-    Button permissionsBtn;
+    Button splashScreenBtn;
 
     static final int REQUEST_CODE = 123;
 
@@ -26,9 +26,9 @@ public class PermissionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        permissionsBtn = findViewById(R.id.permissionsBtn);
+        splashScreenBtn = findViewById(R.id.splashScreenBtn);
 
-        permissionsBtn.setOnClickListener(new View.OnClickListener() {
+        splashScreenBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (ContextCompat.checkSelfPermission(PermissionsActivity.this,
