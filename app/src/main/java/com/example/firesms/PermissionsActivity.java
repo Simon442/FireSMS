@@ -1,112 +1,108 @@
 package com.example.firesms;
 
 import android.Manifest;
-import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 public class PermissionsActivity extends AppCompatActivity {
 
-    Button splashScreenBtn;
+    private static final String TAG = "PermissionsActivity";
 
-    static final int REQUEST_CODE = 123;
+    private static final int REQUEST_CODE = 1;
+
+    private static String[] CALL_PERMISSIONS = {
+            Manifest.permission.READ_CONTACTS,
+            Manifest.permission.ACCESS_NOTIFICATION_POLICY,
+            Manifest.permission.READ_SMS,
+            Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
+            Manifest.permission.READ_PHONE_NUMBERS,
+            Manifest.permission.CALL_PHONE};
+
+    private static String[] STORAGE_PERMISSIONS = {
+            Manifest.permission.READ_EXTERNAL_STORAGE};
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash_screen);
+
+        verifyPermissions();
 
 
-        splashScreenBtn = findViewById(R.id.splashScreenBtn);
+    }
 
-        splashScreenBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (ContextCompat.checkSelfPermission(PermissionsActivity.this,
-                        Manifest.permission.READ_CONTACTS) +
-                        ContextCompat.checkSelfPermission(PermissionsActivity.this,
-                                Manifest.permission.ACCESS_NOTIFICATION_POLICY) +
-                        ContextCompat.checkSelfPermission(PermissionsActivity.this,
-                                Manifest.permission.READ_EXTERNAL_STORAGE) +
-                        ContextCompat.checkSelfPermission(PermissionsActivity.this,
-                                Manifest.permission.READ_PHONE_NUMBERS) +
-                        ContextCompat.checkSelfPermission(PermissionsActivity.this,
-                                Manifest.permission.CALL_PHONE) +
-                        ContextCompat.checkSelfPermission(PermissionsActivity.this,
-                                Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS) !=
-                        PackageManager.PERMISSION_GRANTED) {
+    private void verifyPermissions() {
+        Log.d(TAG, "verifyPermissions: Checking Permissions");
 
-                    //When permission not granted
-                    if (ActivityCompat.shouldShowRequestPermissionRationale(PermissionsActivity.this,
-                            Manifest.permission.READ_CONTACTS) ||
-                            ActivityCompat.shouldShowRequestPermissionRationale(PermissionsActivity.this,
-                                    Manifest.permission.ACCESS_NOTIFICATION_POLICY) ||
-                            ActivityCompat.shouldShowRequestPermissionRationale(PermissionsActivity.this,
-                                    Manifest.permission.READ_EXTERNAL_STORAGE) ||
-                            ActivityCompat.shouldShowRequestPermissionRationale(PermissionsActivity.this,
-                                    Manifest.permission.READ_PHONE_NUMBERS) ||
-                            ActivityCompat.shouldShowRequestPermissionRationale(PermissionsActivity.this,
-                                    Manifest.permission.CALL_PHONE) ||
-                            ActivityCompat.shouldShowRequestPermissionRationale(PermissionsActivity.this,
-                                    Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)) {
+        int permissionReadContacts = ActivityCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.READ_CONTACTS);
+        int permissionAccessNotificationPolicy = ActivityCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.ACCESS_NOTIFICATION_POLICY);
+        int permissionReadSms = ActivityCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.READ_SMS);
+        int permissionReadExternalStorage = ActivityCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE);
+        int permissionRequestIgnoreBatteryOptimizations = ActivityCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+        int permissionReadPhoneNumbers = ActivityCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.READ_PHONE_NUMBERS);
+        int permissionCallPhone = ActivityCompat.checkSelfPermission(PermissionsActivity.this, Manifest.permission.CALL_PHONE);
 
-                        //Create AlertDialog
-                        AlertDialog.Builder builder = new AlertDialog.Builder(
-                                PermissionsActivity.this
-                        );
-                        builder.setTitle("Odobrite vsa dovoljenja");
-                        builder.setMessage("Vsa dovoljenja so potrebna za pravilno delovanje");
-                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int i) {
-                                ActivityCompat.requestPermissions(
-                                        PermissionsActivity.this,
-                                        new String[]{
-                                                Manifest.permission.READ_CONTACTS,
-                                                Manifest.permission.ACCESS_NOTIFICATION_POLICY,
-                                                Manifest.permission.READ_EXTERNAL_STORAGE,
-                                                Manifest.permission.READ_PHONE_NUMBERS,
-                                                Manifest.permission.CALL_PHONE,
-                                                Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-                                        },
-                                        REQUEST_CODE
-                                );
-                            }
-                        });
-                        builder.setNegativeButton("Prekliči", null);
-                        AlertDialog alertDialog = builder.create();
-                        alertDialog.show();
-                    } else {
-                        ActivityCompat.requestPermissions(
-                                PermissionsActivity.this,
-                                new String[]{
-                                        Manifest.permission.READ_CONTACTS,
-                                        Manifest.permission.ACCESS_NOTIFICATION_POLICY,
-                                        Manifest.permission.READ_EXTERNAL_STORAGE,
-                                        Manifest.permission.READ_PHONE_NUMBERS,
-                                        Manifest.permission.CALL_PHONE,
-                                        Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-                                },
-                                REQUEST_CODE
-                        );
-                    }
-                } else {
-                    //When permissions are already granted
-                    Toast.makeText(getApplicationContext(),
-                            "Dovoljenje je že odobreno",
-                            Toast.LENGTH_SHORT).show();
-
-                }
-            }
-        });
+        if (permissionReadContacts != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    CALL_PERMISSIONS,
+                    1
+            );
+        }
+        if (permissionAccessNotificationPolicy != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    CALL_PERMISSIONS,
+                    1
+            );
+        }
+        if (permissionReadContacts != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    CALL_PERMISSIONS,
+                    1
+            );
+        }
+        if (permissionReadSms != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    CALL_PERMISSIONS,
+                    1
+            );
+        }
+        if (permissionRequestIgnoreBatteryOptimizations != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    CALL_PERMISSIONS,
+                    1
+            );
+        }
+        if (permissionReadPhoneNumbers != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    CALL_PERMISSIONS,
+                    1
+            );
+        }
+        if (permissionCallPhone != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    CALL_PERMISSIONS,
+                    1
+            );
+        }
+        if (permissionReadExternalStorage != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    PermissionsActivity.this,
+                    STORAGE_PERMISSIONS,
+                    1
+            );
+        }
     }
 }
