@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <ImageView
         android:id="@+id/pagerView"
-        android:layout_width="532dp"
+        android:layout_width="409dp"
         android:layout_height="325dp"
         android:layout_marginTop="190dp"
         android:layout_marginBottom="216dp"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/alertdialog_4" />
@@ -23,62 +23,77 @@
     <Button
         android:id="@+id/notComingBtn"
         android:layout_width="57dp"
-        android:layout_height="58dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="444dp" />
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#5EFFFFFF"
+        android:foregroundTint="#008C8484"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pagerView"
+        app:layout_constraintEnd_toStartOf="@+id/pagerView"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toEndOf="@+id/pagerView"
+        app:layout_constraintTop_toBottomOf="@+id/pagerView"
+        app:layout_constraintVertical_bias="0.187" />
 
     <Button
         android:id="@+id/comingBtn"
         android:layout_width="57dp"
         android:layout_height="58dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="444dp" />
+        android:background="#FFFFFF"
+        android:backgroundTint="#5EFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pagerView"
+        app:layout_constraintEnd_toStartOf="@+id/pagerView"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toEndOf="@+id/pagerView"
+        app:layout_constraintTop_toBottomOf="@+id/pagerView"
+        app:layout_constraintVertical_bias="0.185" />
 
     <Button
         android:id="@+id/comingLaterBtn"
         android:layout_width="57dp"
-        android:layout_height="58dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="444dp" />
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#5EFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pagerView"
+        app:layout_constraintEnd_toStartOf="@+id/pagerView"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toEndOf="@+id/pagerView"
+        app:layout_constraintTop_toBottomOf="@+id/pagerView"
+        app:layout_constraintVertical_bias="0.186" />
 
     <Button
         android:id="@+id/silenceCloseBtn"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        tools:layout_editor_absoluteX="290dp"
-        tools:layout_editor_absoluteY="444dp" />
+        android:background="#FFFFFF"
+        android:backgroundTint="#5EFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pagerView"
+        app:layout_constraintEnd_toStartOf="@+id/pagerView"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toEndOf="@+id/pagerView"
+        app:layout_constraintTop_toBottomOf="@+id/pagerView"
+        app:layout_constraintVertical_bias="0.187" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="155dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="190dp"
-        android:layout_marginEnd="129dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="500dp"
         android:hint="ime_pozivnika"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/pagerView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/pagerView"
+        app:layout_constraintStart_toEndOf="@+id/pagerView"
+        app:layout_constraintTop_toBottomOf="@+id/pagerView"
+        app:layout_constraintVertical_bias="0.375" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="339dp"
-        android:layout_height="178dp"
+        android:layout_width="338dp"
+        android:layout_height="169dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
@@ -86,11 +101,12 @@
         android:background="#7A9F9F9F"
         android:hint="sms_sporočilo"
         android:textColorHint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/notComingBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/pagerView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

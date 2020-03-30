@@ -2,10 +2,14 @@ package com.example.firesms;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -31,6 +35,25 @@ public class PermissionsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        Button splashScreenBtn = findViewById(R.id.splashScreenBtn);
+        splashScreenBtn.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View v) {
+                checkSelfPermission(PermissionsActivity.this,
+                        Manifest.permission.READ_CONTACTS,
+                        Manifest.permission.ACCESS_NOTIFICATION_POLICY,
+                        Manifest.permission.READ_SMS,
+                        Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
+                        Manifest.permission.READ_PHONE_NUMBERS,
+                        Manifest.permission.CALL_PHONE,
+                        Manifest.permission.READ_EXTERNAL_STORAGE);
+            }
+
+            private void checkSelfPermission(PermissionsActivity permissionsActivity, String contacts, String readContacts, String accessNotificationPolicy, String readSms, String requestIgnoreBatteryOptimizations, String readPhoneNumbers, String callPhone) {
+            }
+        });
 
         verifyPermissions();
 
