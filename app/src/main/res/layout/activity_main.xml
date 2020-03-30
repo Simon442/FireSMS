@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
-        android:id="@+id/pagerList"
+        android:id="@+id/emergencyList"
         style="@style/Widget.AppCompat.ListView"
         android:layout_width="303dp"
         android:layout_height="412dp"

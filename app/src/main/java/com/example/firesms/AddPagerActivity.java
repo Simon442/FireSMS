@@ -2,7 +2,6 @@ package com.example.firesms;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatTextView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class AddPagerActivity extends AppCompatActivity {
 
@@ -36,7 +33,7 @@ public class AddPagerActivity extends AppCompatActivity {
                         // TODO: Poglej ce je boljsi nacin kot isEmpty() ker sem na hitro probal pa ni delal
                         EditText mPagerName = mView.findViewById(R.id.textPagerName);
                         EditText mPhoneNumber = mView.findViewById(R.id.textPhoneNumber);
-                        EditText mKeyword = mView.findViewById(R.id.textKeyword);
+                        EditText mKeyword = mView.findViewById(R.id.keywordText);
                         if (!mPagerName.getText().toString().isEmpty() & mKeyword.getText().toString().isEmpty() & mPhoneNumber.getText().toString().isEmpty()){
                             Toast.makeText(getBaseContext(), R.string.success_added_pager_msg, Toast.LENGTH_SHORT).show();
                         }else {
@@ -54,7 +51,6 @@ public class AddPagerActivity extends AppCompatActivity {
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();
                 dialog.show();
-
             }
         });
 

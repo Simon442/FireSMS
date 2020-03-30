@@ -29,6 +29,7 @@
     <string name="_0">0%</string>
     <string name="klikni_me">Klikni me</string>
     <string name="deluje">deluje</string>
+    <string name="pozivnik_okence">Pozivnik okence</string>
     <string-array name="select_sound">
         <item>Izberi zvok pozivnika</item>
         <item>Pozivnik_1</item>

@@ -31,7 +31,7 @@ public class SmsReaderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = (ListView) findViewById(R.id.pagerList);
+        listView = (ListView) findViewById(R.id.emergencyList);
 
         int permissionCheck = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.READ_SMS);

@@ -43,29 +43,5 @@
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="220dp" />
 
-    <com.ebanx.swipebtn.SwipeButton
-        android:id="@+id/swipe_btn"
-        android:layout_width="220dp"
-        android:layout_height="48dp"
-        app:button_background="@drawable/shape_button"
-        app:button_bottom_padding="5dp"
-        app:button_image_disabled="@drawable/ic_notifications_paused_black_24dp"
-        app:button_image_enabled="@drawable/ic_notifications_off_black_24dp"
-        app:button_image_height="500dp"
-        app:button_image_width="50dp"
-        app:button_left_padding="10dp"
-        app:button_right_padding="10dp"
-        app:button_top_padding="6dp"
-        app:has_activate_state="true"
-        app:initial_state="disabled"
-        app:inner_text_background="@drawable/shape_rounded"
-        app:inner_text_bottom_padding="2dp"
-        app:inner_text_color="@android:color/black"
-        app:inner_text_size="10sp"
-        app:inner_text_top_padding="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="406dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
