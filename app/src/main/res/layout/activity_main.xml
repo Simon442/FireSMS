@@ -29,6 +29,7 @@
         android:layout_marginTop="32dp"
         android:button="@color/colorPrimaryDark"
         android:buttonTint="#870000"
+        android:onClick="checkPermissions"
         android:text="@string/vklopi"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -43,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="563dp" />
+        app:layout_constraintGuide_begin="573dp" />
 
     <Button
         android:id="@+id/settingsBtn"
@@ -87,8 +88,8 @@
     <ListView
         android:id="@+id/emergencyList"
         style="@style/Widget.AppCompat.ListView"
-        android:layout_width="303dp"
-        android:layout_height="412dp"
+        android:layout_width="305dp"
+        android:layout_height="436dp"
         android:layout_marginStart="49dp"
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="40dp"
