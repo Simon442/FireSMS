@@ -1,5 +1,11 @@
 package com.example.firesms;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import android.Manifest;
 import android.content.ContentResolver;
 import android.content.pm.PackageManager;
@@ -13,15 +19,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
+public class SmsActivity extends AppCompatActivity {
 
-public class SmsReaderActivity extends AppCompatActivity {
-
-    ListView listView;
+    ListView emergencyList;
     private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
     ArrayList<String> smsList;
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -29,9 +29,9 @@ public class SmsReaderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sms);
 
-        listView = (ListView) findViewById(R.id.emergencyList);
+        emergencyList = (ListView) findViewById(R.id.emergencyList);
 
         int permissionCheck = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.READ_SMS);
@@ -67,7 +67,7 @@ public class SmsReaderActivity extends AppCompatActivity {
             String number = cursor.getString(cursor.getColumnIndexOrThrow("address")).toString();
             String body = cursor.getString(cursor.getColumnIndexOrThrow("body")).toString();
 
-            smsList.add("Date: "+date + "Number: "+number+ "\n" + "Body: "+body);
+            smsList.add(""+number+ "\n" + ""+body);
             Log.d(TAG, "showContacts: number: "+number+" body:" +body + "body" +date);
         }
         cursor.close();
@@ -75,6 +75,7 @@ public class SmsReaderActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 smsList);
 
-        listView.setAdapter(adapter);
+        emergencyList.setAdapter(adapter);
     }
 }
+

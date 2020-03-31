@@ -47,6 +47,14 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
                 openActivity(PagerIntervencijeNetActivity.class);
             }
         });
+
+        Button contactsList = (Button) findViewById(R.id.contactsList);
+        contactsList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(SmsActivity.class);
+            }
+        });
     }
 
     public void openActivity(Class activity) {

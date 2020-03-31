@@ -25,11 +25,22 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class SettingsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
+
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
     private TextView seekBarVolumeNumber;
     private SeekBar seekBarVolumeSlider;
+    private CheckBox checkBoxSilentMode;
+    private CheckBox checkBoxVibration;
+    private CheckBox checkBoxShowAlertDialog;
+    private Spinner spinnerAddSound;
+
+
+
+
 
 
     @Override
@@ -86,6 +97,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
             }
         });
     }
+
 
 
     @Override
