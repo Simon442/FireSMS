@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="80dp"
-        android:text='1. Dovoli vsa dovoljenja s pritiskom na "VKLOPI" .'
+        android:text='1. Dovolite vsa dovoljenja s pritiskom na "VKLOPI" .'
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,19 +43,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="424dp"
         android:layout_height="400dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="82dp"
+        android:layout_marginBottom="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/screenshot_1_1" />
 
     <TextView
@@ -63,22 +61,35 @@
         android:layout_width="338dp"
         android:layout_height="81dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginTop="240dp"
         android:background="#FAFAFA"
-        android:text='3. Označi "intervencije.net" ob uporabi istoimenskega sistema ter javljanja na intervencijske liste. V primeru, da uporablja drug sistem "Ask" ali "FLORIJAN-SMS" se ta ne označi.'
+        android:text='3. Označite "Intervencije.net" ob uporabi istoimenskega sistema ter javljanja na Intervencijske Liste (IL). V primeru, da uporabljate sistem "Ask" ali "FLORIJAN-SMS" se ta ne označi.'
         android:textAlignment="textStart"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView10000"
         android:layout_width="350dp"
         android:layout_height="43dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="184dp"
         android:background="#FAFAFA"
-        android:text='4. V nastavitvah izklopi optimizacijo baterije za FireSMS za brezhibno delovanje.'
+        android:text='4. V nastavitvah izklopite optimizacijo baterije za FireSMS za brezhibno delovanje.'
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text10"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="184dp"
+        android:background="#FAFAFA"
+        android:text='4. V nastavitvah izklopite optimizacijo baterije za FireSMS za brezhibno delovanje.'
         android:textAlignment="textStart"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
