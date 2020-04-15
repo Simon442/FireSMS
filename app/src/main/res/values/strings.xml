@@ -30,12 +30,15 @@
     <string name="klikni_me">Klikni me</string>
     <string name="deluje">deluje</string>
     <string name="pozivnik_okence">Pozivnik okence</string>
+    <string name="ime_pozivnika">ime_pozivnika</string>
     <string-array name="select_sound">
         <item>Izberi zvok pozivnika</item>
         <item>Pozivnik_1</item>
         <item>Pozivnik_2</item>
         <item>Pozivnik_3</item>
         <item>Pozivnik_4</item>
+        <item>Pozivnik_5</item>
+
     </string-array>
 
 </resources>

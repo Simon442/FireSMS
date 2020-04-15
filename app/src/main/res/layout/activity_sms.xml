@@ -9,12 +9,19 @@
     <ListView
         android:id="@+id/emergencyList"
         style="@android:style/Widget.Material.ListView"
-        android:layout_width="341dp"
-        android:layout_height="729dp"
-        android:layout_marginStart="38dp"
+        android:layout_width="390dp"
+        android:layout_height="717dp"
+        android:layout_marginStart="24dp"
         android:divider="?android:attr/textCursorDrawable"
         android:textFilterEnabled="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
         tools:listfooter="@android:layout/simple_list_item_1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

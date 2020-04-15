@@ -11,10 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="129dp"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="129dp"
         android:text="@string/test_alerter"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,10 +24,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="135dp"
-        android:text="@string/pozivnik_okence"
+        android:text="pozivnik intervencije.net"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/testAlerterBtn" />
 
@@ -35,11 +37,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="141dp"
         android:text="Contacts List"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/testAlertPagerBtn" />
+
+    <Button
+        android:id="@+id/testAlertPagerBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="12dp"
+        android:text="pozivnik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactsList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

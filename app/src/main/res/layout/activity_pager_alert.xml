@@ -1,47 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    tools:context="com.example.firesms.PagerAlertActivity">
 
     <ImageView
-        android:id="@+id/imageMainWindow"
-        android:layout_width="321dp"
-        android:layout_height="243dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="220dp"
+        android:id="@+id/imageView2"
+        android:layout_width="398dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="7dp"
+        android:background="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/alertdialog2" />
-
-    <LinearLayout
-        android:layout_width="251dp"
-        android:layout_height="128dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="256dp">
-
-        <TextView
-            android:id="@+id/textAlertInformation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="smsSporočilo"
-            android:textColor="#000000" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="@+id/guideline30"
+        app:srcCompat="@drawable/alertdialog_5" />
 
     <TextView
-        android:id="@+id/textPagerName"
+        android:id="@+id/textView2"
+        android:layout_width="154dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/ime_pozivnika"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline28"
+        app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="346dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:background="#7A9F9F9F"
+        android:hint="sms_sporočilo"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:layout_constraintTop_toTopOf="@+id/guideline32" />
+
+    <Button
+        android:id="@+id/silenceAndClosePagerBtn"
+        android:layout_width="332dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:shadowColor="#00FFFFFF"
+        android:textColor="#00FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:layout_constraintTop_toTopOf="@+id/guideline33" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="imePozivnika"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="220dp" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="167dp" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="123dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="130dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="28dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="217dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="431dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

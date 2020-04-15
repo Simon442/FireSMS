@@ -55,6 +55,16 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
                 openActivity(SmsActivity.class);
             }
         });
+
+        Button testAlertPagerBtn2 = (Button) findViewById(R.id.testAlertPagerBtn2);
+        testAlertPagerBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(PagerAlertActivity.class);
+            }
+        });
+
+
     }
 
     public void openActivity(Class activity) {

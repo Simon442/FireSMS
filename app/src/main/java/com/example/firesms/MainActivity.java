@@ -24,12 +24,17 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
 
+    ListView emergencyList;
+    private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
+    ArrayList<String> smsList;
+    private static final String TAG = MainActivity.class.getSimpleName();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         pref = this.getSharedPreferences("settings", MODE_PRIVATE);
         editor = pref.edit();
 
-        onFirstStartup();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -47,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openActivity(SettingsActivity.class);
+            }
+        });
+
+        Button informationBtn = findViewById(R.id.informationBtn);
+        informationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(InformationActivity.class);
             }
         });
 
@@ -69,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         setService(pref.getBoolean("onoff", false));
+
+
     }
 
     public void openActivity(Class activity) {

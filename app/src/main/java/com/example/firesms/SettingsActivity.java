@@ -76,6 +76,9 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
             }
         });
+
+
+
 //TODO Testira pozivnik v 5 sekundah
         Button testPagerBtn = findViewById(R.id.testPagerBtn);
         testPagerBtn.setOnClickListener(new View.OnClickListener() {

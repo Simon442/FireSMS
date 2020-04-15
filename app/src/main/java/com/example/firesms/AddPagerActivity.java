@@ -2,6 +2,8 @@ package com.example.firesms;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class AddPagerActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +25,10 @@ public class AddPagerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(AddPagerActivity.this);
-                final View mView = getLayoutInflater().inflate(R.layout.activity_add_new_pager_dialog,null);
+                final View mView = getLayoutInflater().inflate(R.layout.activity_add_new_pager_dialog, null);
 
                 Button mAddPager = mView.findViewById(R.id.addNewPagerBtn);
+                Button mCancelAddPager = mView.findViewById(R.id.cancelAddPager);
 
                 mAddPager.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -34,9 +38,9 @@ public class AddPagerActivity extends AppCompatActivity {
                         EditText mPagerName = mView.findViewById(R.id.textPagerName);
                         EditText mPhoneNumber = mView.findViewById(R.id.textPhoneNumber);
                         EditText mKeyword = mView.findViewById(R.id.keywordText);
-                        if (!mPagerName.getText().toString().isEmpty() & mKeyword.getText().toString().isEmpty() & mPhoneNumber.getText().toString().isEmpty()){
+                        if (!mPagerName.getText().toString().isEmpty() & mKeyword.getText().toString().isEmpty() & mPhoneNumber.getText().toString().isEmpty()) {
                             Toast.makeText(getBaseContext(), R.string.success_added_pager_msg, Toast.LENGTH_SHORT).show();
-                        }else {
+                        } else {
                             Toast.makeText(getBaseContext(), R.string.failed_add_pager_msg, Toast.LENGTH_SHORT).show();
                         }
 
@@ -53,6 +57,5 @@ public class AddPagerActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
-
     }
 }

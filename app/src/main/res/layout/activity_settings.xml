@@ -10,26 +10,26 @@
         android:id="@+id/settingsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
         android:text="@string/nastavitve"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
 
     <CheckBox
         android:id="@+id/checkBoxSilentMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/zvoni_tudi_v_tihem_na_inu"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsText" />
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
     <CheckBox
         android:id="@+id/checkBoxVibration"
@@ -69,24 +69,23 @@
         android:id="@+id/saveSettingsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="263dp"
         android:text="@string/shrani"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
 
     <Button
         android:id="@+id/testPagerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:text="@string/test"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/saveSettingsBtn"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
     <Spinner
         android:id="@+id/spinnerAddSound"
@@ -107,6 +106,7 @@
         android:text="@string/prika_i_samo_notifikacijo_v_primeru_da_je_telefon_odklenjen"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,5 +124,33 @@
         app:layout_constraintBottom_toTopOf="@+id/checkBoxShowAlertDialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="82dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="545dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="632dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,35 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
-    <TextView
-        android:id="@+id/textFireSMS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="FireSMS"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/textPagerName"
-        android:layout_width="285dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="9dp"
-        android:ems="10"
-        android:hint="Ime pozivnika"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textPhoneNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textFireSMS" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/keywordText"
@@ -43,47 +16,22 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/addNewPagerBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPhoneNumber" />
 
-    <Button
-        android:id="@+id/addNewPagerBtn"
-        android:layout_width="89dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:text="DODAJ"
-        android:textSize="14sp"
+    <TextView
+        android:id="@+id/textFireSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="FireSMS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keywordText" />
-
-    <Button
-        android:id="@+id/cancelAddPager"
-        android:layout_width="89dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="Prekliči"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addNewPagerBtn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Switch
-        android:id="@+id/switchIntervencijeNet"
-        android:layout_width="151dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="1dp"
-        android:text="Intervencije.net"
-        android:textColor="#870000"
-        android:thumbTint="#870000"
-        app:layout_constraintEnd_toStartOf="@+id/addNewPagerBtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keywordText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/textPhoneNumber"
@@ -96,7 +44,64 @@
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/keywordText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPagerName" />
+
+    <Switch
+        android:id="@+id/switchIntervencijeNet"
+        android:layout_width="178dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="1dp"
+        android:text="Intervencije.net"
+        android:textColor="#870000"
+        android:textSize="18sp"
+        android:thumbTint="#870000"
+        app:layout_constraintEnd_toStartOf="@+id/addNewPagerBtn"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keywordText" />
+
+    <Button
+        android:id="@+id/addNewPagerBtn"
+        android:layout_width="89dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:text="DODAJ"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keywordText" />
+
+    <Button
+        android:id="@+id/cancelAddPager"
+        android:layout_width="89dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="24dp"
+        android:text="Prekliči"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNewPagerBtn"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <EditText
+        android:id="@+id/textPagerName"
+        android:layout_width="285dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Ime pozivnika"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textPhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFireSMS" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
