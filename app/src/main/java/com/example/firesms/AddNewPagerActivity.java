@@ -12,7 +12,7 @@ import android.widget.EditText;
 public class AddNewPagerActivity extends AppCompatActivity {
     Context context = getApplicationContext();
     SQLiteHelper dbHelper = new SQLiteHelper(context);
-    SQLiteDatabase db = new SQLiteDatabase();
-
+    EditText name,Telephone,keyword;
+    name = (EditText)findviewById(R.id.textPagerName);
 
 }
