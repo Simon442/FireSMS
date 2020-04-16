@@ -2,31 +2,57 @@ package com.example.firesms;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class AddPagerActivity extends AppCompatActivity {
 
-    EditText name,phone,keyword;
-    Button savebtn,Clearbtn;
+    private EditText name,phone,keyword;
+    private Button savebtn,Clearbtn;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_pager);
-        ImageButton addPagerBtn = findViewById(R.id.addPagerBtn);
 
+        // Our Database handler
+        final SQLiteHelper dbhelper = new SQLiteHelper(getApplicationContext());
+
+        ImageButton addPagerBtn = findViewById(R.id.addPagerBtn);
+        final View mView = getLayoutInflater().inflate(R.layout.activity_add_new_pager_dialog, null);
+
+        ArrayList<HashMap<String, String>> DB = dbhelper.getUsers();
+        //ListViews
+        ListView lv;
+        lv = (ListView)mView.findViewById(R.id.pagerList);
+        ListAdapter adapter = new SimpleAdapter
+                (this, DB, R.layout.activity_add_pager,new String[]{"name","telephone","keyword"}, new int[]{R.id.textPagerName, R.id.textPhoneNumber, R.id.keywordText});
+        if( !adapter.isEmpty() ){
+
+        } else{
+            lv.setAdapter(adapter);
+        }
 
         addPagerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(AddPagerActivity.this);
-                final View mView = getLayoutInflater().inflate(R.layout.activity_add_new_pager_dialog, null);
+
                 mBuilder.setView(mView);
                 final AlertDialog dialog = mBuilder.create();
 
@@ -49,12 +75,11 @@ public class AddPagerActivity extends AppCompatActivity {
                 savebtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // Our Database handler
-                        SQLiteHelper helper = new SQLiteHelper(getApplicationContext());
+
                         // Make sure that the text fields are not empty!
                         if ( !name.getText().toString().isEmpty() && !phone.getText().toString().isEmpty() && !keyword.getText().toString().isEmpty()) {
                            // add to database
-                            long val = helper.Insert(
+                            long val = dbhelper.Insert(
                                     name.getText().toString(), phone.getText().toString(),keyword.getText().toString()
                             );
                             // In case it fails show msg to user
@@ -64,7 +89,9 @@ public class AddPagerActivity extends AppCompatActivity {
                             else {
                                 Toast.makeText(getBaseContext(), R.string.success_added_pager_msg, Toast.LENGTH_SHORT).show();
                             }
-                            dialog.hide();
+
+                            // TODO: Make it hide after entering
+                            //dialog.hide();
                         } else {
                             Toast.makeText(getBaseContext(), R.string.failed_add_pager_msg, Toast.LENGTH_SHORT).show();
                         }
@@ -82,7 +109,6 @@ public class AddPagerActivity extends AppCompatActivity {
                     }
                 });
                 // TODO: Cancel on click mislm da se da z finish() samo nisem ziher;
-
 
                 dialog.show();
             }
