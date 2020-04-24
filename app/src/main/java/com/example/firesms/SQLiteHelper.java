@@ -9,6 +9,7 @@ import android.provider.BaseColumns;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class SQLiteHelper extends SQLiteOpenHelper {
         // If you change the database stuff, you must increment the database version.
@@ -56,19 +57,32 @@ public class SQLiteHelper extends SQLiteOpenHelper {
             return RETURN;
         }
 
-        public ArrayList<HashMap<String, String>> getUsers(){
+        public ArrayList<HashMap<String,String>> getUsers(){
             SQLiteDatabase db = this.getReadableDatabase();
-            ArrayList<HashMap <String, String>> userList = new ArrayList<>();
+            ArrayList<HashMap<String, String>> DB = new ArrayList<>();
             String Select = "SELECT " + dbSchema.COLUMN1_TITLE + ", " + dbSchema.COLUMN2_TITLE + ", " + dbSchema.COLUMN3_TITLE + " FROM " + dbSchema.TABLE_NAME;
             Cursor cursor = db.rawQuery(Select, null);
-            while( cursor.moveToNext()) {
-                HashMap<String, String> user = new HashMap<>();
-                user.put("Name:",cursor.getString(cursor.getColumnIndex(dbSchema.COLUMN1_TITLE)));
-                user.put("Telephone:",cursor.getString(cursor.getColumnIndex(dbSchema.COLUMN2_TITLE)));
-                user.put("Keyword:",cursor.getString(cursor.getColumnIndex(dbSchema.COLUMN3_TITLE)));
-                userList.add(user);
+            try {
+                while( cursor.moveToNext()) {
+                    HashMap<String,String> hash = new HashMap<>();
+                    hash.put("Name:", cursor.getString(cursor.getColumnIndex(dbSchema.COLUMN1_TITLE)));
+                    hash.put("Telephone:", cursor.getString(cursor.getColumnIndex(dbSchema.COLUMN2_TITLE)));
+                    hash.put("Keyword:" ,cursor.getString(cursor.getColumnIndex(dbSchema.COLUMN3_TITLE)));
+                    DB.add(hash);
+                }
+            } finally {
+                db.close();
             }
-            return userList;
+
+
+            return DB;
+        }
+
+         // Delete User Details
+         public void DeletePager(String phone){
+            SQLiteDatabase db = this.getWritableDatabase();
+            db.delete(dbSchema.TABLE_NAME,  dbSchema.COLUMN2_TITLE+" = ?",new String[]{phone});
+            db.close();
         }
 
         public static class dbSchema implements BaseColumns {
