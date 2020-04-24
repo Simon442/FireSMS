@@ -15,8 +15,7 @@ import android.widget.Button;
 public class PagerIntervencijeNetActivity extends AppCompatActivity {
 
     //TODO Vibration on button press
-    Button notComingBtn;
-    Vibrator vibrator;
+
 
     //TODO Volume up key silences/stops vibrating
 

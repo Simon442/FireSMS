@@ -52,10 +52,12 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/silence_close_custom_button_2"
-        android:text="UTIŠAJ "
+        android:fontFamily="sans-serif-black"
+        android:text="X"
         android:textColor="#FFFFFF"
         android:textColorHint="#FDFDFD"
         android:textSize="36sp"
+        android:onClick="Close_normal_dialog"
         app:layout_constraintStart_toStartOf="@+id/guideline31"
         app:layout_constraintTop_toTopOf="@+id/guideline33" />
 
