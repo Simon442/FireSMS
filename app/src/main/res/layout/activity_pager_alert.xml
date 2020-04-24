@@ -4,44 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.firesms.PagerAlertActivity">
+    android:background="@color/transparent"
+    android:backgroundTint="@color/transparent"
+    android:theme="@style/TransparentCompat">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="398dp"
         android:layout_height="423dp"
-        android:layout_marginStart="7dp"
-        android:background="#00FFFFFF"
+        android:background="#00733636"
         android:foregroundTint="#00FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline30"
-        app:srcCompat="@drawable/alertdialog_5" />
+        app:srcCompat="@drawable/alertdialog2" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="154dp"
+        android:layout_width="163dp"
         android:layout_height="30dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:hint="@string/ime_pozivnika"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
         app:layout_constraintStart_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toTopOf="@+id/guideline27" />
+        app:layout_constraintTop_toTopOf="@+id/guideline27"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="346dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="362dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="8dp"
         android:background="#7A9F9F9F"
         android:hint="sms_sporočilo"
         android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="@+id/guideline31"
         app:layout_constraintTop_toTopOf="@+id/guideline32" />
+
 
     <Button
         android:id="@+id/silenceAndClosePagerBtn"
@@ -49,10 +51,10 @@
         android:layout_height="56dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#00FFFFFF"
-        android:foregroundTint="#00FFFFFF"
-        android:shadowColor="#00FFFFFF"
-        android:textColor="#00FFFFFF"
+        android:background="@drawable/silence_close_custom_button_2"
+        android:text="UTIŠAJ "
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FDFDFD"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="@+id/guideline31"
         app:layout_constraintTop_toTopOf="@+id/guideline33" />
@@ -63,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="167dp" />
+        app:layout_constraintGuide_begin="99dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline28"
@@ -77,27 +79,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="130dp" />
+        app:layout_constraintGuide_begin="62dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="28dp" />
+        app:layout_constraintGuide_begin="16dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="217dp" />
+        app:layout_constraintGuide_begin="148dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="431dp" />
+        app:layout_constraintGuide_begin="362dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
