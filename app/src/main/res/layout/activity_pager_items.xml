@@ -8,6 +8,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/pager_items_holder"
         android:layout_width="126dp"
         android:layout_height="70dp"
         tools:layout_editor_absoluteX="153dp"

@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/aktivni_pozivniki"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/colorAccent"
@@ -23,7 +23,8 @@
         android:id="@+id/addPagerBtn"
         android:layout_width="74dp"
         android:layout_height="64dp"
-        android:layout_marginStart="296dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="TODO"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,27 +36,26 @@
         android:layout_width="21dp"
         android:layout_height="39dp"
         android:layout_marginStart="296dp"
-        android:layout_marginBottom="112dp"
         android:text="+"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#078B32"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/addPagerBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="624dp" />
+        app:layout_constraintGuide_begin="568dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pagerList"
-        android:layout_width="316dp"
-        android:layout_height="499dp"
+        android:layout_width="327dp"
+        android:layout_height="444dp"
         android:layout_marginStart="55dp"
         android:background="#00606060"
         app:layout_constraintStart_toStartOf="parent"

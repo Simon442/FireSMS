@@ -56,12 +56,6 @@ public class AddPagerActivity extends AppCompatActivity {
                 mBuilder.setView(mView);
                 final AlertDialog dialog = mBuilder.create();
 
-                        // TODO: Tole da bo delal
-                        // TODO: Poglej ce je boljsi nacin kot isEmpty() ker sem na hitro probal pa ni delal
-
-                        // TODO: Pager manager u svoj java file in nardis nov class z metodami za shranjevanje pa to
-                        // TODO: potem pa lahko mas neskoncno pagerjev ce jih sharins v svojo datoteko kot xml
-                        // TODO: To lahko tud jaz nardim ce hoces
 
                 // The vars that will be used
                 name = (EditText)mView.findViewById(R.id.textPagerName);
@@ -108,7 +102,6 @@ public class AddPagerActivity extends AppCompatActivity {
                         keyword.setText("");
                     }
                 });
-                // TODO: Cancel on click mislm da se da z finish() samo nisem ziher;
 
                 dialog.show();
             }

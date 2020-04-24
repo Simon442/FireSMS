@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         Switch onoffSwitch = findViewById(R.id.onoffSwitch);
         onoffSwitch.setChecked(pref.getBoolean("onoff", false));
         onoffSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

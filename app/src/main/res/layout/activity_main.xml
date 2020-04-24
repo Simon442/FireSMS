@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="573dp" />
+        app:layout_constraintGuide_begin="534dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -117,8 +117,8 @@
     <ListView
         android:id="@+id/emergencyList"
         style="@style/Widget.AppCompat.ListView"
-        android:layout_width="320dp"
-        android:layout_height="468dp"
+        android:layout_width="344dp"
+        android:layout_height="418dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
         android:transcriptMode="normal"

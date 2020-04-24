@@ -32,9 +32,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".InformationActivity"></activity>
-        <activity android:name=".PagerAlertActivity" />
+        <activity android:name=".PagerAlertActivity" android:theme="@style/TransparentCompat"/>
         <activity android:name=".SmsActivity" />
-        <activity android:name=".PagerIntervencijeNetActivity" />
+        <activity android:name=".PagerIntervencijeNetActivity" android:theme="@style/TransparentCompat"/>
         <activity android:name=".DeveloperOptionsActivity" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".SettingsActivity" />
