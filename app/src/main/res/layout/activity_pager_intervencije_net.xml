@@ -53,16 +53,18 @@
         app:layout_constraintTop_toTopOf="@+id/guideline11"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/silenceCloseBtn"
         android:layout_width="62dp"
         android:layout_height="63dp"
         android:background="@drawable/silence_close_custom_button"
+        android:checked="false"
         android:fontFamily="sans-serif-black"
-        android:text="X"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
         android:onClick="Close_dialog"
+        android:textColor="#FFFFFF"
+        android:textOff="Izkopi zvok"
+        android:textOn="Vgasni"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline24"
         app:layout_constraintEnd_toStartOf="@+id/guideline40"
         app:layout_constraintHorizontal_bias="1.0"

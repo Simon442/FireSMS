@@ -36,11 +36,19 @@ public class PagerIntervencijeNetActivity extends AppCompatActivity {
         String number = "111111";
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:" + number));
+        Vibrator v = (Vibrator) getApplicationContext().getSystemService(getApplicationContext().VIBRATOR_SERVICE);
+        v.vibrate(100);
+        ((new Handler())).postDelayed(new Runnable(){
+            public void run(){
+
+                Log.i("I","TEST I AM IN RUN");
+            }
+        }, 300);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-
             return;
-
         }
+
+
         startActivity(intent);
         finish();
     }
@@ -56,7 +64,7 @@ public class PagerIntervencijeNetActivity extends AppCompatActivity {
 
                 Log.i("I","TEST I AM IN RUN");
             }
-        }, 1000);
+        }, 300);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
@@ -71,15 +79,21 @@ public class PagerIntervencijeNetActivity extends AppCompatActivity {
         String number = "333333";
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:" + number));
+        Vibrator v = (Vibrator) getApplicationContext().getSystemService(getApplicationContext().VIBRATOR_SERVICE);
+        v.vibrate(100);
+        ((new Handler())).postDelayed(new Runnable(){
+            public void run(){
+
+                Log.i("I","TEST I AM IN RUN");
+            }
+        }, 300);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-
             return;
-
         }
+
 
         startActivity(intent);
         finish();
-
     }
 
     public void Close_dialog(View view) {

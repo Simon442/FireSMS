@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline32" />
 
 
-    <Button
+    <ToggleButton
         android:id="@+id/silenceAndClosePagerBtn"
         android:layout_width="332dp"
         android:layout_height="56dp"
@@ -53,11 +53,12 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/silence_close_custom_button_2"
         android:fontFamily="sans-serif-black"
-        android:text="X"
+        android:onClick="Close_dialog"
         android:textColor="#FFFFFF"
         android:textColorHint="#FDFDFD"
+        android:textOff="Izklopi zvok"
+        android:textOn="Vgasni"
         android:textSize="36sp"
-        android:onClick="Close_normal_dialog"
         app:layout_constraintStart_toStartOf="@+id/guideline31"
         app:layout_constraintTop_toTopOf="@+id/guideline33" />
 
