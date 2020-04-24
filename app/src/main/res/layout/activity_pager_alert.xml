@@ -35,8 +35,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="362dp"
-        android:layout_height="176dp"
+        android:layout_width="366dp"
+        android:layout_height="180dp"
         android:layout_marginTop="8dp"
         android:background="#7A9F9F9F"
         android:hint="sms_sporočilo"
