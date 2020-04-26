@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onFirstStartup(){
-        onFirstStartup(false);
+        onFirstStartup(true);
     }
 
     private void onFirstStartup(boolean forceStartup){

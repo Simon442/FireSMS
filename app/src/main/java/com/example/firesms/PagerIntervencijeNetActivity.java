@@ -43,7 +43,7 @@ public class PagerIntervencijeNetActivity extends AppCompatActivity {
 
                 Log.i("I","TEST I AM IN RUN");
             }
-        }, 300);
+        }, 100);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
@@ -64,7 +64,7 @@ public class PagerIntervencijeNetActivity extends AppCompatActivity {
 
                 Log.i("I","TEST I AM IN RUN");
             }
-        }, 300);
+        }, 100);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
@@ -86,7 +86,7 @@ public class PagerIntervencijeNetActivity extends AppCompatActivity {
 
                 Log.i("I","TEST I AM IN RUN");
             }
-        }, 300);
+        }, 100);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }

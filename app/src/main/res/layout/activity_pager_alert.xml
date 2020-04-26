@@ -36,7 +36,7 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="366dp"
-        android:layout_height="180dp"
+        android:layout_height="184dp"
         android:layout_marginTop="8dp"
         android:background="#7A9F9F9F"
         android:hint="sms_sporočilo"
@@ -44,24 +44,32 @@
         app:layout_constraintStart_toStartOf="@+id/guideline31"
         app:layout_constraintTop_toTopOf="@+id/guideline32" />
 
-
-    <ToggleButton
-        android:id="@+id/silenceAndClosePagerBtn"
-        android:layout_width="332dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/silence_close_custom_button_2"
-        android:fontFamily="sans-serif-black"
-        android:onClick="Close_dialog"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FDFDFD"
-        android:textOff="Izklopi zvok"
-        android:textOn="Vgasni"
-        android:textSize="36sp"
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipe_btn"
+        android:layout_width="326dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:onClick="Close_dialog_normal"
+        app:button_background="@drawable/shape_button_swipe"
+        app:button_bottom_padding="20dp"
+        app:button_image_disabled="@drawable/ic_notifications_paused_black_24dp"
+        app:button_image_enabled="@drawable/ic_notifications_off_black_24dp"
+        app:button_image_height="70dp"
+        app:button_image_width="70dp"
+        app:button_left_padding="20dp"
+        app:button_right_padding="20dp"
+        app:button_top_padding="20dp"
+        app:has_activate_state="true"
+        app:initial_state="disabled"
+        app:inner_text="UTIŠAJ"
+        app:inner_text_background="@drawable/shape_rounded_swipe"
+        app:inner_text_bottom_padding="18dp"
+        app:inner_text_color="@android:color/widget_edittext_dark"
+        app:inner_text_size="16sp"
+        app:inner_text_top_padding="18dp"
         app:layout_constraintStart_toStartOf="@+id/guideline31"
         app:layout_constraintTop_toTopOf="@+id/guideline33" />
-
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline27"
@@ -96,7 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="148dp" />
+        app:layout_constraintGuide_begin="144dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline33"

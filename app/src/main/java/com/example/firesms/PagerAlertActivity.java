@@ -17,7 +17,7 @@ public class PagerAlertActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pager_alert);
     }
 
-    public void Close_dialog(View view) {
+    public void Close_dialog_normal(View view) {
 
         finish();
     }

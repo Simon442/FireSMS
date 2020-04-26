@@ -97,9 +97,9 @@ public class AddPagerActivity extends AppCompatActivity {
                 Clearbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        name.setText("");
-                        phone.setText("");
-                        keyword.setText("");
+
+                        finish();
+
                     }
                 });
 
