@@ -12,11 +12,13 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="104dp"
         android:text="@string/pretekli_pozivi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
@@ -37,17 +39,17 @@
         android:thumbTint="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline35"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="@+id/guideline34"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.931" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="534dp" />
+        app:layout_constraintGuide_begin="582dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -62,13 +64,12 @@
         android:layout_width="88dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:background="#00FFFFFF"
         android:drawableTop="@drawable/ic_settingssvg_35dp"
         android:text="@string/nastavitve"
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline35"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="@+id/guideline34"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
@@ -77,56 +78,41 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="119dp"
         android:layout_height="71dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginEnd="56dp"
         android:background="#00FFFFFF"
         android:drawableTop="@drawable/ic_addpagersvg_35dp"
         android:text="@string/dodaj_pozivnik"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline37"
-        app:layout_constraintTop_toTopOf="@+id/guideline7" />
-
-    <Button
-        android:id="@+id/informationBtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="119dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="#00FFFFFF"
-        android:drawableTop="@drawable/ic_informationsvg"
-        android:text="Informacije"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline37"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
         android:id="@+id/devOptionsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
         android:text="@string/dev_options"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
-        app:layout_constraintEnd_toStartOf="@+id/guideline37"
-        app:layout_constraintHorizontal_bias="0.757"
-        app:layout_constraintStart_toStartOf="@+id/guideline35"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <ListView
         android:id="@+id/emergencyList"
         style="@style/Widget.AppCompat.ListView"
-        android:layout_width="344dp"
-        android:layout_height="418dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="334dp"
+        android:layout_height="479dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="4dp"
         android:transcriptMode="normal"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline34"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.25"
         tools:listfooter="@android:layout/simple_list_item_1"
         tools:visibility="visible" />
 
@@ -142,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="631dp" />
+        app:layout_constraintGuide_begin="652dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline34"
@@ -156,21 +142,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="134dp" />
+        app:layout_constraintGuide_begin="216dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="719dp" />
+        app:layout_constraintGuide_begin="733dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline37"
+        android:id="@+id/guideline44"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="416dp" />
+        app:layout_constraintGuide_end="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

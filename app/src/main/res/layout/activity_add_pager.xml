@@ -10,12 +10,14 @@
         android:id="@+id/textWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
+        android:layout_marginStart="72dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="72dp"
         android:text="@string/aktivni_pozivniki"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -50,13 +52,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="568dp" />
+        app:layout_constraintGuide_begin="613dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pagerList"
-        android:layout_width="327dp"
-        android:layout_height="444dp"
-        android:layout_marginStart="55dp"
+        android:layout_width="355dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="40dp"
         android:background="#00606060"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
@@ -66,13 +68,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="39dp" />
+        app:layout_constraintGuide_begin="16dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="111dp" />
+        app:layout_constraintGuide_begin="91dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

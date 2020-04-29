@@ -55,13 +55,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button informationBtn = findViewById(R.id.informationBtn);
-        informationBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity(InformationActivity.class);
-            }
-        });
 
         Button devOptionsBtn = findViewById(R.id.devOptionsBtn);
         devOptionsBtn.setOnClickListener(new View.OnClickListener() {

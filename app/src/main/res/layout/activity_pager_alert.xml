@@ -35,9 +35,9 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="366dp"
-        android:layout_height="184dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="353dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="7dp"
         android:background="#7A9F9F9F"
         android:hint="sms_sporočilo"
         android:textColorHint="#000000"
@@ -48,7 +48,7 @@
         android:id="@+id/swipe_btn"
         android:layout_width="326dp"
         android:layout_height="69dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="4dp"
         android:onClick="Close_dialog_normal"
         app:button_background="@drawable/shape_button_swipe"
@@ -97,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
+        app:layout_constraintGuide_begin="22dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline32"
