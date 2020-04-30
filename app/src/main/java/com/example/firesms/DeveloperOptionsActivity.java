@@ -5,7 +5,9 @@ package com.example.firesms;
         import androidx.constraintlayout.widget.ConstraintLayout;
 
         import android.content.Intent;
+        import android.net.Uri;
         import android.os.Bundle;
+        import android.provider.Settings;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.widget.Button;
@@ -63,7 +65,6 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
                 openActivity(PagerAlertActivity.class);
             }
         });
-
 
     }
 
