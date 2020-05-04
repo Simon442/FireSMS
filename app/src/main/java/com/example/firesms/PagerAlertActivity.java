@@ -11,6 +11,8 @@ import com.ebanx.swipebtn.SwipeButton;
 
 public class PagerAlertActivity extends AppCompatActivity {
 
+    //TODO Swipe silences, then converts into button and on press it closes
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -2,6 +2,7 @@ package com.example.firesms;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -38,8 +39,8 @@ public class AddPagerActivity extends AppCompatActivity {
 
         ArrayList<HashMap<String, String>> DB = dbhelper.getUsers();
         //ListViews
-        ListView lv;
-        lv = (ListView)mView.findViewById(R.id.pagerList);
+        RecyclerView lv;
+        lv = (RecyclerView) mView.findViewById(R.id.pagerList);
         ListAdapter adapter = new SimpleAdapter
                 (this, DB, R.layout.activity_add_pager,new String[]{"name","telephone","keyword"}, new int[]{R.id.textPagerName, R.id.textPhoneNumber, R.id.keywordText});
         if( !adapter.isEmpty() ){
