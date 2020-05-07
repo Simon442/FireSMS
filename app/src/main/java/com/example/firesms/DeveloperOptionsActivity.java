@@ -66,6 +66,14 @@ public class DeveloperOptionsActivity extends AppCompatActivity {
             }
         });
 
+        Button testAlertPagerBtn3 = (Button) findViewById(R.id.testAlertPagerBtn3);
+        testAlertPagerBtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity(PagerIntervencijeNetFullscreenActivity.class);
+            }
+        });
+
     }
 
     public void openActivity(Class activity) {

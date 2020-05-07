@@ -46,7 +46,7 @@ public class AddPagerActivity extends AppCompatActivity {
         if( !adapter.isEmpty() ){
 
         } else{
-            lv.setAdapter(adapter);
+            lv.setAdapter((RecyclerView.Adapter) adapter);
         }
 
         addPagerBtn.setOnClickListener(new View.OnClickListener() {
