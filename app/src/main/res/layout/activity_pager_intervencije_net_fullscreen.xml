@@ -41,21 +41,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:hint="DATE"
+        android:layout_marginTop="48dp"
+        android:hint="DATE AND TIME"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColorHint="#000000"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/guideline29"
         app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
     <TextView
-        android:id="@+id/smsPagerFullscreenTime"
+        android:id="@+id/smsPagerFullscreenPhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
-        android:hint="TIME"
+        android:layout_marginTop="24dp"
+        android:hint="PHONE_NUMBER"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColorHint="#000000"
         android:textSize="18sp"
@@ -64,24 +64,85 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toTopOf="@+id/guideline26"
-        app:srcCompat="@drawable/bellalerter" />
+        app:srcCompat="@drawable/ic_notifications_none_black_24dp" />
 
     <TextView
         android:id="@+id/smsMessageFullscreen"
-        android:layout_width="344dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="12dp"
+        android:layout_width="368dp"
+        android:layout_height="181dp"
         android:layout_marginTop="20dp"
-        android:hint="SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE SMS_MESSAGE"
+        android:background="#959595"
+        android:hint="SMS_MESSAGE"
         android:textColorHint="#000000"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toTopOf="@+id/guideline37" />
+
+    <Button
+        android:id="@+id/notComingBtn"
+        android:layout_width="367dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/not_coming_custom_button"
+        android:onClick="Not_coming_call"
+        android:text="NE"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+        app:layout_constraintTop_toTopOf="@+id/guideline38" />
+
+    <Button
+        android:id="@+id/comingLaterBtn"
+        android:layout_width="367dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/coming_later_custom_button"
+        android:onClick="Coming_later_call"
+        android:text="DaK"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+        app:layout_constraintTop_toBottomOf="@+id/notComingBtn" />
+
+    <Button
+        android:id="@+id/comingBtn"
+        android:layout_width="367dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/coming_custom_button"
+        android:onClick="Coming_call"
+        android:text="DA"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+        app:layout_constraintTop_toBottomOf="@+id/comingLaterBtn" />
+
+    <ToggleButton
+        android:id="@+id/silenceCloseBtn"
+        android:layout_width="367dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/silence_close_custom_button"
+        android:checked="false"
+        android:fontFamily="sans-serif-black"
+        android:onClick="Close_dialog"
+        android:textColor="#FFFFFF"
+        android:textOff="Izklopi zvok"
+        android:textOn="Zaperi poziv"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+        app:layout_constraintTop_toBottomOf="@+id/comingBtn" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline25"
@@ -95,7 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="98dp" />
+        app:layout_constraintGuide_end="328dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline37"
@@ -103,5 +164,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="134dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="342dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
