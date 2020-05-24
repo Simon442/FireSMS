@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:backgroundTint="#F1F1F1"
     tools:context="com.example.firesms.PagerIntervencijeNetFullscreenActivity">
 
 
@@ -12,17 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="62dp" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="431dp"
-        android:layout_height="775dp"
-        android:background="@drawable/custom_pager_view"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintGuide_begin="40dp" />
 
     <TextView
         android:id="@+id/smsPagerFullPagerName"
@@ -68,81 +60,90 @@
         android:layout_height="65dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toTopOf="@+id/guideline26"
         app:srcCompat="@drawable/ic_notifications_none_black_24dp" />
 
     <TextView
         android:id="@+id/smsMessageFullscreen"
-        android:layout_width="368dp"
-        android:layout_height="181dp"
+        android:layout_width="366dp"
+        android:layout_height="240dp"
         android:layout_marginTop="20dp"
         android:background="#959595"
         android:hint="SMS_MESSAGE"
         android:textColorHint="#000000"
         android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toTopOf="@+id/guideline37" />
 
+
     <Button
         android:id="@+id/notComingBtn"
-        android:layout_width="367dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/not_coming_custom_button"
         android:onClick="Not_coming_call"
         android:text="NE"
-        android:textColor="#FFFFFF"
+        android:textColor="#96191D"
         android:textSize="36sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toTopOf="@+id/guideline38" />
 
     <Button
         android:id="@+id/comingLaterBtn"
-        android:layout_width="367dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/coming_later_custom_button"
         android:onClick="Coming_later_call"
         android:text="DaK"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="#F6921E"
         android:textSize="36sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/guideline40"
-        app:layout_constraintStart_toStartOf="@+id/guideline25"
-        app:layout_constraintTop_toBottomOf="@+id/notComingBtn" />
+        app:layout_constraintTop_toTopOf="@+id/guideline38" />
 
     <Button
         android:id="@+id/comingBtn"
-        android:layout_width="367dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="33dp"
         android:background="@drawable/coming_custom_button"
         android:onClick="Coming_call"
         android:text="DA"
-        android:textColor="#FFFFFF"
+        android:textColor="#016837"
         android:textSize="36sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline40"
-        app:layout_constraintStart_toStartOf="@+id/guideline25"
-        app:layout_constraintTop_toBottomOf="@+id/comingLaterBtn" />
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/comingLaterBtn"
+        app:layout_constraintStart_toEndOf="@+id/notComingBtn"
+        app:layout_constraintTop_toTopOf="@+id/guideline38" />
 
     <ToggleButton
         android:id="@+id/silenceCloseBtn"
-        android:layout_width="367dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="347dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/silence_close_custom_button"
         android:checked="false"
         android:fontFamily="sans-serif-black"
         android:onClick="Close_dialog"
-        android:textColor="#FFFFFF"
+        android:textColor="#666666"
         android:textOff="Izklopi zvok"
         android:textOn="Zaperi poziv"
         android:textSize="36sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
-        app:layout_constraintTop_toBottomOf="@+id/comingBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/comingLaterBtn" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline25"
@@ -163,14 +164,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="134dp" />
+        app:layout_constraintGuide_begin="140dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline38"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="342dp" />
+        app:layout_constraintGuide_begin="446dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline40"
@@ -178,5 +179,39 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="32dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="7dp"
+        android:layout_height="801dp"
+        android:background="#96191D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="7dp"
+        android:layout_height="801dp"
+        android:background="#96191D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="432dp"
+        android:layout_height="11dp"
+        android:background="#96191D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="432dp"
+        android:layout_height="12dp"
+        android:background="#96191D"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

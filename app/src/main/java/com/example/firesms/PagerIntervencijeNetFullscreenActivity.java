@@ -12,6 +12,11 @@ import android.os.Handler;
 import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
+
+import com.baoyz.swipemenulistview.SwipeMenuListView;
+
+import java.util.ArrayList;
 
 public class PagerIntervencijeNetFullscreenActivity extends AppCompatActivity {
 
@@ -19,7 +24,9 @@ public class PagerIntervencijeNetFullscreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pager_intervencije_net_fullscreen);
+
     }
+
 
     public void Not_coming_call(View view) {
 
