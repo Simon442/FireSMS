@@ -8,110 +8,45 @@
     android:backgroundTint="@color/transparent"
     android:theme="@style/TransparentCompat">
 
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="398dp"
         android:layout_height="423dp"
         android:background="#00733636"
         android:foregroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline30"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/alertdialog2" />
-
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="163dp"
         android:layout_height="30dp"
-        android:layout_marginTop="4dp"
         android:hint="@string/ime_pozivnika"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline32"
-        app:layout_constraintEnd_toStartOf="@+id/guideline28"
-        app:layout_constraintTop_toTopOf="@+id/guideline27"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="355dp"
         android:layout_height="188dp"
-        android:layout_marginTop="7dp"
         android:background="#7A9F9F9F"
         android:hint="sms_sporočilo"
         android:textColorHint="#000000"
-        app:layout_constraintStart_toStartOf="@+id/guideline31"
-        app:layout_constraintTop_toTopOf="@+id/guideline32" />
-
-    <com.ebanx.swipebtn.SwipeButton
-        android:id="@+id/swipe_btn"
-        android:layout_width="326dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="4dp"
-        android:onClick="Close_dialog_normal"
-        app:button_background="@drawable/shape_button_swipe"
-        app:button_bottom_padding="20dp"
-        app:button_image_disabled="@drawable/ic_notifications_paused_black_24dp"
-        app:button_image_enabled="@drawable/ic_notifications_off_black_24dp"
-        app:button_image_height="70dp"
-        app:button_image_width="70dp"
-        app:button_left_padding="20dp"
-        app:button_right_padding="20dp"
-        app:button_top_padding="20dp"
-        app:has_activate_state="true"
-        app:initial_state="disabled"
-        app:inner_text="UTIŠAJ"
-        app:inner_text_background="@drawable/shape_rounded_swipe"
-        app:inner_text_bottom_padding="18dp"
-        app:inner_text_color="@android:color/widget_edittext_dark"
-        app:inner_text_size="16sp"
-        app:inner_text_top_padding="18dp"
-        app:layout_constraintStart_toStartOf="@+id/guideline31"
-        app:layout_constraintTop_toTopOf="@+id/guideline33" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="99dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="283dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="62dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="22dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="144dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="362dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
